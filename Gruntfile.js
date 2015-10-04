@@ -65,6 +65,11 @@ module.exports = function(grunt) {
           'js/min/jquery.waypoints.min.js': ['node_modules/waypoints/lib/jquery.waypoints.min.js'],
           'js/min/jquery.min.js': ['node_modules/jquery/dist/jquery.min.js']
         }
+      },
+      distjsmin: {
+        files: [
+          {expand: true, cwd: 'js/min/', src: ['*'], dest: 'dist/js/min/'}
+        ]
       }
     },
 
