@@ -4,3 +4,8 @@ dist/*
 css/font-awesome/*
 *.*~
 .idea/*
+js/jquery.fittext.js
+js/min/jquery.flexslider-min.js
+js/min/jquery.magnific-popup.min.js
+js/min/jquery.waypoints.min.js
+js/min/jquery.min.js
