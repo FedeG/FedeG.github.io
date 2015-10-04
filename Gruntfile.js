@@ -17,11 +17,6 @@ module.exports = function(grunt) {
 
     // Concatenates files into one
     concat: {
-      mine: {
-        banner: bannerContent,
-        src: ['js/*.js'],
-        dest: '.tmp/concat/mine.js'
-      },
       all: {
         banner: bannerContent,
         src: ['js/*.js'],
@@ -34,13 +29,9 @@ module.exports = function(grunt) {
       options: {
         banner: bannerContent
       },
-      mine: {
-        src: '.tmp/concat/mine.js',
-        dest: 'dist/js/mine.js'
-      },
       all: {
         src: '.tmp/concat/all.js',
-        dest: 'dist/js/all.js'
+        dest: 'dist/js/all-min.js'
       }
     },
 
@@ -61,6 +52,19 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: 'images', src: ['*', '*/*', '*/*/*'], dest: 'dist/images'}
         ]
+      },
+      js: {
+        files: {
+          'js/jquery.fittext.js': ['node_modules/fittext.js/jquery.fittext.js']
+        }
+      },
+      jsmin: {
+        files: {
+          'js/min/jquery.flexslider-min.js': ['node_modules/flexslider/jquery.flexslider-min.js'],
+          'js/min/jquery.magnific-popup.min.js': ['node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'],
+          'js/min/jquery.waypoints.min.js': ['node_modules/waypoints/lib/jquery.waypoints.min.js'],
+          'js/min/jquery.min.js': ['node_modules/jquery/dist/jquery.min.js']
+        }
       }
     },
 
