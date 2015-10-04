@@ -65,6 +65,14 @@ module.exports = function(grunt) {
           'js/min/jquery.waypoints.min.js': ['node_modules/waypoints/lib/jquery.waypoints.min.js'],
           'js/min/jquery.min.js': ['node_modules/jquery/dist/jquery.min.js']
         }
+      },
+      distmin: {
+        files: {
+          'dist/js/min/jquery.flexslider-min.js': ['node_modules/flexslider/jquery.flexslider-min.js'],
+          'dist/js/min/jquery.magnific-popup.min.js': ['node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'],
+          'dist/js/min/jquery.waypoints.min.js': ['node_modules/waypoints/lib/jquery.waypoints.min.js'],
+          'dist/js/min/jquery.min.js': ['node_modules/jquery/dist/jquery.min.js']
+        }
       }
     },
 
