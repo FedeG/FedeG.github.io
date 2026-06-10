@@ -11,7 +11,7 @@ const companyColors = {
 };
 
 function ExpCard({ exp, index }) {
-  const { lang } = useI18n();
+  const { lang, t } = useI18n();
   const role = lang === 'en' && exp.roleEn ? exp.roleEn : exp.role;
   const period = lang === 'en' && exp.periodEn ? exp.periodEn : exp.period;
   const description = lang === 'en' && exp.descriptionEn ? exp.descriptionEn : exp.description;
@@ -31,7 +31,7 @@ function ExpCard({ exp, index }) {
               exp.company
             )}
             {exp.isOwn && (
-              <span className="timeline-own-badge"><FiAward size={10} /> Cooperativa propia</span>
+              <span className="timeline-own-badge"><FiAward size={10} /> {t('experience.ownCoop')}</span>
             )}
           </div>
         </div>

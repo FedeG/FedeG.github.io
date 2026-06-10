@@ -64,25 +64,25 @@ export default function Hero() {
               <span className="hero-stat-value hero-stat-icon">
                 <FiGithub size={18} aria-hidden="true" /> {personalInfo.githubStats.repos}
               </span>
-              <span className="hero-stat-label">Repos</span>
+              <span className="hero-stat-label">{t('hero.repos')}</span>
             </div>
             <div className="hero-stat">
               <span className="hero-stat-value hero-stat-icon">
                 <FiUsers size={18} aria-hidden="true" /> {personalInfo.githubStats.followers}
               </span>
-              <span className="hero-stat-label">Followers</span>
+              <span className="hero-stat-label">{t('hero.followers')}</span>
             </div>
             <div className="hero-stat">
               <span className="hero-stat-value hero-stat-icon">
                 <FiStar size={18} aria-hidden="true" /> {(personalInfo.githubStats.stars / 1000).toFixed(1)}k
               </span>
-              <span className="hero-stat-label">Stars</span>
+              <span className="hero-stat-label">{t('hero.stars')}</span>
             </div>
           </div>
 
           <div className="hero-orgs" aria-label={lang === 'es' ? 'Organizaciones' : 'Organizations'}>
             {personalInfo.githubStats.organizations.map((org) => (
-              <a key={org.name} href={org.url} target="_blank" rel="noopener noreferrer" className="hero-org-badge" title={org.name} aria-label={`${org.name} en GitHub`}>
+              <a key={org.name} href={org.url} target="_blank" rel="noopener noreferrer" className="hero-org-badge" title={org.name} aria-label={`${org.name}${t('hero.orgOn')}`}>
                 <img src={`https://github.com/${org.name}.png`} alt={`${org.name} logo`} className="hero-org-avatar" loading="lazy" width="18" height="18" />
                 <span>{org.name}</span>
               </a>

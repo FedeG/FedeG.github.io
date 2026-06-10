@@ -91,11 +91,10 @@ export default function Projects() {
             return (
               <motion.div
                 key={project.id}
-                layout
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.25, delay: i * 0.04 }}
+                transition={{ duration: 0.3 }}
                 className="project-detail-card"
                 role="listitem"
               >

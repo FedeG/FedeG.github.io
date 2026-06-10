@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { skills } from '../data/portfolio';
+import { useI18n } from '../context/I18nContext';
 import {
   SiPython, SiDjango, SiNodedotjs, SiRuby, SiGo, SiCplusplus, SiGnubash,
   SiReact, SiRedux, SiGraphql, SiAngular, SiSass, SiBootstrap, SiWebpack, SiD3,
@@ -43,6 +44,7 @@ const iconMap = {
 };
 
 export default function Skills() {
+  const { t } = useI18n();
   return (
     <section id="skills" className="section section-dark">
       <div className="container">
@@ -52,8 +54,8 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Skills & Technologies</h2>
-          <p className="section-subtitle">Technologies I work with daily, organized by domain.</p>
+          <h2 className="section-title">{t('skills.title')}</h2>
+          <p className="section-subtitle">{t('skills.subtitle')}</p>
           <div className="glow-line" />
         </motion.div>
 

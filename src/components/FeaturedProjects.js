@@ -48,11 +48,10 @@ export default function FeaturedProjects() {
             return (
               <motion.div
                 key={project.id}
-                layout
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.4, delay: i * 0.08 }}
                 className="project-card"
               >
                 <h3 className="project-card-title">{title}</h3>

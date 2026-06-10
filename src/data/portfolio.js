@@ -17,10 +17,10 @@ export const personalInfo = {
   location: 'Argentina',
   languages: ['Español (Nativo)', 'Inglés (Avanzado)'],
   hobbies: [
-    { icon: 'cooking', label: 'Cocina', detail: '@al.horno.con.papa', url: 'https://alhornoconpapa.com.ar' },
-    { icon: 'kickboxing', label: 'Kick Boxing', detail: null, url: null },
-    { icon: 'events', label: 'Organizador Eventos Software Libre', detail: 'PyCon, PyDay, FLISoL', url: null },
-    { icon: 'coop', label: 'Cooperativista', detail: 'Socio fundador de Devecoop', url: 'https://devecoop.com' },
+    { icon: 'cooking', label: 'Cocina', labelEn: 'Cooking', detail: '@al.horno.con.papa', url: 'https://alhornoconpapa.com.ar' },
+    { icon: 'kickboxing', label: 'Kick Boxing', labelEn: 'Kick Boxing', detail: null, detailEn: null, url: null },
+    { icon: 'events', label: 'Organizador Eventos Software Libre', labelEn: 'Free Software Events Organizer', detail: 'PyCon, PyDay, FLISoL', detailEn: 'PyCon, PyDay, FLISoL', url: null },
+    { icon: 'coop', label: 'Cooperativista', labelEn: 'Co-op Member', detail: 'Socio fundador de Devecoop', detailEn: 'Co-founder of Devecoop', url: 'https://devecoop.com' },
   ],
   githubStats: {
     repos: 58,

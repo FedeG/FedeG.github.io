@@ -12,7 +12,7 @@ const hobbyIcons = {
 };
 
 export default function About() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   return (
     <section className="section" aria-label={t('about.title')}>
@@ -35,7 +35,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="about-text"
           >
-            <p>{personalInfo.bio}</p>
+            <p>{lang === 'en' ? personalInfo.bioEn : personalInfo.bio}</p>
             <div className="about-langs">
               {personalInfo.languages.map((lang) => (
                 <span key={lang}>{lang}</span>
@@ -45,21 +45,25 @@ export default function About() {
             <div className="hobbies-section">
               <h3 className="hobbies-title">{t('about.hobbies')}</h3>
               <div className="hobbies-grid">
-                {personalInfo.hobbies.map((hobby) => (
+                {personalInfo.hobbies.map((hobby) => {
+                  const label = lang === 'en' && hobby.labelEn ? hobby.labelEn : hobby.label;
+                  const detail = lang === 'en' && hobby.detailEn ? hobby.detailEn : hobby.detail;
+                  return (
                   <div key={hobby.icon} className="hobby-card">
                     <span className="hobby-icon" aria-hidden="true">{hobbyIcons[hobby.icon] || <FiAward size={18} />}</span>
                     <div className="hobby-info">
-                      <h4>{hobby.label}</h4>
+                      <h4>{label}</h4>
                       {hobby.url ? (
                         <a href={hobby.url} target="_blank" rel="noopener noreferrer">
-                          {hobby.detail} <FiExternalLink size={10} style={{ display: 'inline' }} aria-hidden="true" />
+                          {detail} <FiExternalLink size={10} style={{ display: 'inline' }} aria-hidden="true" />
                         </a>
-                      ) : hobby.detail ? (
-                        <span>{hobby.detail}</span>
+                      ) : detail ? (
+                        <span>{detail}</span>
                       ) : null}
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </motion.div>
@@ -89,7 +93,7 @@ export default function About() {
               <FiAward className="about-card-icon" size={18} aria-hidden="true" />
               <div>
                 <p className="about-card-label">{t('about.role')}</p>
-                <p className="about-card-value">{personalInfo.role}</p>
+                <p className="about-card-value">{lang === 'en' ? personalInfo.roleEn : personalInfo.role}</p>
               </div>
             </div>
           </motion.div>
