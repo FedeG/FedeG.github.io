@@ -57,9 +57,9 @@ export default function FeaturedProjects() {
                       <span key={cat} className="project-card-tag">{catLabel(cat, lang)}</span>
                     ))}
                   </div>
-                  {project.links[0] && (
-                    <a href={project.links[0].url} target="_blank" rel="noopener noreferrer" className="project-card-link">
-                      <FiArrowRight size={16} />
+                    {project.links[0] && (
+                    <a href={project.links[0].url} target="_blank" rel="noopener noreferrer" className="project-card-link" aria-label={`${title} - ${project.links[0].label}`}>
+                      <FiArrowRight size={16} aria-hidden="true" />
                     </a>
                   )}
                 </div>

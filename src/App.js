@@ -1,12 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ThemeProvider } from './context/ThemeContext';
 import { I18nProvider, useI18n } from './context/I18nContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
 
 const SITE_URL = 'https://fedeg.github.io';
 
@@ -78,10 +79,12 @@ function AppContent() {
       </a>
       <Navbar />
       <main id="main-content" ref={mainRef}>
+      <Suspense fallback={<div className="page-loading" aria-label={lang === 'es' ? 'Cargando...' : 'Loading...'} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', color: 'var(--text-muted)' }}>{lang === 'es' ? 'Cargando...' : 'Loading...'}</div>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      </Suspense>
       </main>
       <Footer />
     </>

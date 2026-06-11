@@ -28,6 +28,7 @@
   --hover-blue-border: rgba(0, 212, 255, 0.3);
   --glow-line-color: rgba(0, 212, 255, 0.5);
   --blue-alpha-10: rgba(0, 212, 255, 0.1);
+  --blue-alpha-15: rgba(0, 212, 255, 0.15);
   --blue-alpha-20: rgba(0, 212, 255, 0.2);
   --blue-alpha-05: rgba(0, 212, 255, 0.05);
   --green-alpha-10: rgba(0, 255, 136, 0.1);
@@ -71,6 +72,7 @@
   --hover-blue-border: rgba(37, 99, 235, 0.3);
   --glow-line-color: rgba(37, 99, 235, 0.3);
   --blue-alpha-10: rgba(37, 99, 235, 0.1);
+  --blue-alpha-15: rgba(37, 99, 235, 0.18);
   --blue-alpha-20: rgba(37, 99, 235, 0.2);
   --blue-alpha-05: rgba(37, 99, 235, 0.05);
   --green-alpha-10: rgba(5, 150, 105, 0.1);
@@ -421,7 +423,7 @@ ul { list-style: none; }
   font-family: 'JetBrains Mono', monospace;
   background: var(--org-badge-bg);
   border: 1px solid var(--border-color);
-  color: var(--text-muted);
+  color: var(--text-secondary);
   transition: all 0.2s;
 }
 
@@ -579,9 +581,10 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: var(--blue-alpha-10);
+  background: var(--blue-alpha-15);
   border-color: var(--hover-blue-border);
   color: var(--cyber-blue);
+  font-weight: 700;
 }
 
 .btn-primary:hover {

@@ -56,7 +56,11 @@ export default function Hero() {
           className="hero-right"
         >
           <div className="hero-avatar" aria-hidden="true">
-            <img src="/profile.jpg" alt="Federico Gonzalez" className="hero-avatar-img" loading="eager" fetchpriority="high" />
+            <picture>
+              <source srcSet="/profile.webp" type="image/webp" />
+              <source srcSet="/profile.jpg" type="image/jpeg" />
+              <img src="/profile.jpg" alt="Federico Gonzalez" className="hero-avatar-img" loading="eager" fetchpriority="high" width="220" height="220" decoding="async" />
+            </picture>
           </div>
 
           <div className="hero-stats" aria-label={lang === 'es' ? 'Estadísticas de GitHub' : 'GitHub statistics'}>

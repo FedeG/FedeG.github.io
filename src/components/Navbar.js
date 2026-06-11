@@ -81,14 +81,13 @@ export default function Navbar() {
             {'<FG />'}
           </Link>
 
-          <div className="navbar-links" role="menubar">
+          <div className="navbar-links">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={location.pathname === link.href ? 'active' : ''}
-                role="menuitem"
               >
                 {t(link.labelKey)}
               </Link>
@@ -116,14 +115,13 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className={`mobile-menu ${isOpen ? 'open' : ''}`} role="menu" ref={mobileRef}>
+      <div className={`mobile-menu ${isOpen ? 'open' : ''}`} ref={mobileRef}>
         {navLinks.map((link) => (
           <Link
             key={link.href}
             to={link.href}
             onClick={(e) => handleNavClick(e, link.href)}
             className={location.pathname === link.href ? 'active' : ''}
-            role="menuitem"
           >
             {t(link.labelKey)}
           </Link>
