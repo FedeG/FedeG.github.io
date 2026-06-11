@@ -4,8 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { projects } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import { FiExternalLink, FiFolder } from 'react-icons/fi';
-
-const SITE_URL = 'https://fedeg.github.io';
+import { catLabel, SITE_URL } from '../utils';
 
 const filters = [
   { key: 'all', labelEs: 'Todos', labelEn: 'All' },
@@ -17,10 +16,7 @@ const filters = [
   { key: 'enterprise', labelEs: 'Empresarial', labelEn: 'Enterprise' },
 ];
 
-const catLabel = (cat, lang) => {
-  const map = { 'full-stack': { es: 'Full-Stack', en: 'Full-Stack' }, 'open-source': { es: 'Open Source', en: 'Open Source' }, devops: { es: 'DevOps', en: 'DevOps' }, iot: { es: 'IoT', en: 'IoT' }, training: { es: 'Capacitación', en: 'Training' }, enterprise: { es: 'Empresarial', en: 'Enterprise' } };
-  return map[cat] ? map[cat][lang] : cat;
-};
+
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -46,9 +42,29 @@ export default function Projects() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
         <meta property="og:url" content={`${SITE_URL}/projects`} />
+        <meta property="og:image" content="https://fedeg.github.io/profile.jpg" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <meta property="og:locale" content={lang === 'es' ? 'es_AR' : 'en_US'} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={desc} />
+        <meta name="twitter:image" content="https://fedeg.github.io/profile.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: lang === 'es' ? 'Proyectos de Federico Gonzalez' : 'Federico Gonzalez Projects',
+          description: desc,
+          url: `${SITE_URL}/projects`,
+          mainEntity: filtered.map(p => ({
+            '@type': 'SoftwareApplication',
+            name: p.titleEn || p.title,
+            description: p.descriptionEn || p.description,
+            applicationCategory: p.category[0] || 'WebApplication',
+            url: p.links[0]?.url || SITE_URL,
+            author: { '@type': 'Person', name: 'Federico Gonzalez', url: SITE_URL },
+          })),
+        })}</script>
       </Helmet>
 
       <div className="container">

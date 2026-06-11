@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useI18n } from '../context/I18nContext';
+import { SITE_URL } from '../utils';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
@@ -7,8 +8,6 @@ import Skills from '../components/Skills';
 import FeaturedProjects from '../components/FeaturedProjects';
 import OpenSource from '../components/OpenSource';
 import Contact from '../components/Contact';
-
-const SITE_URL = 'https://fedeg.github.io';
 
 export default function Home() {
   const { lang } = useI18n();
@@ -30,9 +29,14 @@ export default function Home() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
         <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content="https://fedeg.github.io/profile.jpg" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <meta property="og:locale" content={lang === 'es' ? 'es_AR' : 'en_US'} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={desc} />
+        <meta name="twitter:image" content="https://fedeg.github.io/profile.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Hero />
       <About />

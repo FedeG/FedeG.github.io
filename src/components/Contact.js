@@ -21,11 +21,11 @@ export default function Contact() {
         </motion.div>
 
         <div className="contact-wrap">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
             className="contact-card"
           >
             <div className="contact-icon"><FiSend size={32} /></div>

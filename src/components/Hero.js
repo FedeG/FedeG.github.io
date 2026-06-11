@@ -56,7 +56,7 @@ export default function Hero() {
           className="hero-right"
         >
           <div className="hero-avatar" aria-hidden="true">
-            <img src="/profile.jpg" alt="Federico Gonzalez" className="hero-avatar-img" />
+            <img src="/profile.jpg" alt="Federico Gonzalez" className="hero-avatar-img" loading="eager" fetchpriority="high" />
           </div>
 
           <div className="hero-stats" aria-label={lang === 'es' ? 'Estadísticas de GitHub' : 'GitHub statistics'}>

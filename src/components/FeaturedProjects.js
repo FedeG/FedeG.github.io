@@ -3,18 +3,7 @@ import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { projects } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
-
-const catLabel = (cat, lang) => {
-  const map = {
-    'full-stack': { es: 'Full-Stack', en: 'Full-Stack' },
-    'open-source': { es: 'Open Source', en: 'Open Source' },
-    devops: { es: 'DevOps', en: 'DevOps' },
-    iot: { es: 'IoT', en: 'IoT' },
-    training: { es: 'Capacitación', en: 'Training' },
-    enterprise: { es: 'Empresarial', en: 'Enterprise' },
-  };
-  return map[cat] ? map[cat][lang] : cat;
-};
+import { catLabel } from '../utils';
 
 export default function FeaturedProjects() {
   const { t, lang } = useI18n();
@@ -50,6 +39,7 @@ export default function FeaturedProjects() {
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
                 className="project-card"

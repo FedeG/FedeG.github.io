@@ -35,6 +35,7 @@
   --green-alpha-04: rgba(0, 255, 136, 0.04);
   --shadow-blue: rgba(0, 212, 255, 0.15);
   --shadow-blue-05: rgba(0, 212, 255, 0.05);
+  --shadow-green-05: rgba(0, 255, 136, 0.05);
   --hero-title-color: #ffffff;
   --opensource-period-color: rgba(0, 212, 255, 0.7);
   --project-role-color: rgba(0, 212, 255, 0.7);
@@ -77,6 +78,7 @@
   --green-alpha-04: rgba(5, 150, 105, 0.04);
   --shadow-blue: rgba(37, 99, 235, 0.15);
   --shadow-blue-05: rgba(37, 99, 235, 0.05);
+  --shadow-green-05: rgba(5, 150, 105, 0.05);
   --hero-title-color: #1f2937;
   --opensource-period-color: var(--cyber-blue);
   --project-role-color: var(--cyber-blue);
@@ -100,6 +102,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 0.3s, color 0.3s;
+}
+
+/* Skip to main content */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--cyber-blue);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
 }
 
 /* Prevent flickering on animated elements */
@@ -355,10 +374,6 @@ ul { list-style: none; }
 @keyframes cursorBlink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @keyframes avatarPulse {

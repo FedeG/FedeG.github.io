@@ -18,7 +18,10 @@ function ExpCard({ exp, index }) {
   const highlights = lang === 'en' && exp.highlightsEn ? exp.highlightsEn : exp.highlights;
 
   return (
-    <div className="timeline-card">
+    <motion.div
+      className="timeline-card"
+      whileHover={{ y: -3, transition: { duration: 0.2 } }}
+    >
       <div className="timeline-header">
         <div>
           <div className="timeline-role">{role}</div>
@@ -51,7 +54,7 @@ function ExpCard({ exp, index }) {
           <span key={t}>{t}</span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -90,7 +93,14 @@ export default function Experience() {
         )}
 
         <div className="timeline" style={{ marginTop: current ? '3rem' : 0 }}>
-          <div className="timeline-line" />
+          <motion.div
+            className="timeline-line"
+            initial={{ scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
+            style={{ transformOrigin: 'top' }}
+          />
 
           {past.map((exp, i) => (
             <motion.div

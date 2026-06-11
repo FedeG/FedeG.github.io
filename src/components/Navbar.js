@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiGithub, FiLinkedin, FiGitlab, FiMenu, FiX, FiMoon, FiSun } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolio';
@@ -18,6 +18,7 @@ export default function Navbar() {
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
   const { t, lang, switchLang } = useI18n();
+  const mobileRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -28,6 +29,33 @@ export default function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
+
+  const handleKeyDown = useCallback((e) => {
+    if (e.key === 'Escape') {
+      setIsOpen(false);
+      return;
+    }
+    if (e.key === 'Tab' && mobileRef.current && isOpen) {
+      const focusable = mobileRef.current.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+      return () => document.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [isOpen, handleKeyDown]);
 
   const handleNavClick = (e, href) => {
     if (href.startsWith('/#')) {
@@ -88,7 +116,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className={`mobile-menu ${isOpen ? 'open' : ''}`} role="menu">
+      <div className={`mobile-menu ${isOpen ? 'open' : ''}`} role="menu" ref={mobileRef}>
         {navLinks.map((link) => (
           <Link
             key={link.href}

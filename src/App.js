@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ThemeProvider } from './context/ThemeContext';
@@ -33,7 +33,12 @@ const personJsonLd = {
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    if (!hash) {
+    if (hash) {
+      const el = document.getElementById(hash.replace('#', ''));
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+      }
+    } else {
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
@@ -56,6 +61,8 @@ function CanonicalUrl({ path }) {
 
 function AppContent() {
   const location = useLocation();
+  const { lang } = useI18n();
+  const mainRef = useRef(null);
 
   return (
     <>
@@ -66,11 +73,16 @@ function AppContent() {
       <HtmlLangSetter />
       <ScrollToTop />
       <CanonicalUrl path={location.pathname === '/' ? '' : location.pathname} />
+      <a href="#main-content" className="skip-link">
+        {lang === 'es' ? 'Saltar al contenido principal' : 'Skip to main content'}
+      </a>
       <Navbar />
+      <main id="main-content" ref={mainRef}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      </main>
       <Footer />
     </>
   );

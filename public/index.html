@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Federico Gonzalez | Senior Full-Stack Developer & DevOps Engineer" />
     <meta name="twitter:description" content="Orquestando infraestructura robusta, creando experiencias de usuario fluidas." />
-    <meta name="twitter:image" content="https://fedeg.github.io/og-image.png" />
+    <meta name="twitter:image" content="https://fedeg.github.io/profile.jpg" />
 
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="canonical" href="https://fedeg.github.io" />
@@ -50,6 +50,10 @@
         ]
       }
     }
+    </script>
+    <script>
+      // Prevent theme flash — apply stored theme before React hydrates
+      (function(){try{var t=localStorage.getItem('portfolio-theme');if(!t){t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})()
     </script>
     <script>
       // Single Page Apps for GitHub Pages

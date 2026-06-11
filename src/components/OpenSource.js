@@ -32,7 +32,8 @@ export default function OpenSource() {
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
+                viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="card"
               >

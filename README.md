@@ -1,6 +1,29 @@
-Welcome to my github.io page:
-----------------------------
+# FedeG.github.io — Portfolio
 
-This page uses [Ceevee 10 Template](http://www.styleshout.com/demo/?theme=ceevee) and i add npm and grunt for make this template with updated libraries.
+Portfolio personal de **Federico Gonzalez**, desarrollador Senior Full-Stack & DevOps Engineer.
 
-The original README: [Ceevee-README.md](https://github.com/FedeG/FedeG.github.io/blob/source_origin/Ceevee-README.md)
+Construido con React 18, React Router v7, Framer Motion, i18n (ES/EN) y theme dark/light.
+
+## Stack
+
+- React 18 + CRA (react-scripts 5)
+- React Router DOM v7
+- Framer Motion
+- react-icons + lucide-react
+- react-helmet-async
+- Plain CSS (no Tailwind, no TypeScript)
+- Pre-rendering con react-snap
+- GitHub Pages + SPA fallback
+
+## Desarrollo
+
+```bash
+nvm use 22
+npm start        # dev server
+npm run build    # producción
+```
+
+## Deploy
+
+El deploy se hace desde la branch `main` mediante GitHub Actions.
+El merge a `main` lo manejo directamente desde GitHub.

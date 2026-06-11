@@ -63,8 +63,8 @@ export default function Skills() {
           {Object.entries(skills).map(([category, techs], i) => (
             <motion.div
               key={category}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="card"
@@ -72,10 +72,10 @@ export default function Skills() {
               <h3 className="skill-category-title">{category}</h3>
               <div className="skill-items">
                 {techs.map((tech) => (
-                  <div key={tech} className="skill-item">
-                    <span className="skill-item-icon">{iconMap[tech] || null}</span>
+                  <span key={tech} className="skill-item">
+                    <span className="skill-item-icon">{iconMap[tech] || <FiTerminal size={14} />}</span>
                     <span className="skill-item-name">{tech}</span>
-                  </div>
+                  </span>
                 ))}
               </div>
             </motion.div>
