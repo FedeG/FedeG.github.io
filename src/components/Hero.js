@@ -87,7 +87,7 @@ export default function Hero() {
           <div className="hero-orgs" aria-label={lang === 'es' ? 'Organizaciones' : 'Organizations'}>
             {personalInfo.githubStats.organizations.map((org) => (
               <a key={org.name} href={org.url} target="_blank" rel="noopener noreferrer" className="hero-org-badge" title={org.name} aria-label={`${org.name}${t('hero.orgOn')}`}>
-                <img src={`https://github.com/${org.name}.png`} alt={`${org.name} logo`} className="hero-org-avatar" loading="lazy" width="18" height="18" />
+                <img src={`https://github.com/${org.name}.png?s=36`} alt={`${org.name} logo`} className="hero-org-avatar" loading="lazy" width="18" height="18" />
                 <span>{org.name}</span>
               </a>
             ))}
