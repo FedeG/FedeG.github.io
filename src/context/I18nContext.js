@@ -15,7 +15,7 @@ const translations = {
       stars: 'Stars',
       orgOn: ' en GitHub',
     },
-    about: { title: 'Sobre Mí', location: 'Ubicación', email: 'Email', role: 'Rol', hobbies: 'Intereses' },
+    about: { title: 'Sobre Mí', location: 'Ubicación', email: 'Email', role: 'Rol', education: 'Formación', hobbies: 'Intereses' },
     experience: { title: 'Experiencia', subtitle: 'Una década construyendo software en startups, cooperativas y empresas.', ownCoop: 'Cooperativa propia' },
     skills: { title: 'Habilidades y Tecnologías', subtitle: 'Tecnologías con las que trabajo diariamente, organizadas por dominio.' },
     featured: {
@@ -50,7 +50,7 @@ const translations = {
       stars: 'Stars',
       orgOn: ' on GitHub',
     },
-    about: { title: 'About Me', location: 'Location', email: 'Email', role: 'Role', hobbies: 'Interests' },
+    about: { title: 'About Me', location: 'Location', email: 'Email', role: 'Role', education: 'Education', hobbies: 'Interests' },
     experience: { title: 'Experience', subtitle: 'A decade of building and scaling software across startups, cooperatives, and enterprise.', ownCoop: 'Own cooperative' },
     skills: { title: 'Skills & Technologies', subtitle: 'Technologies I work with daily, organized by domain.' },
     featured: {

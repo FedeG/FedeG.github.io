@@ -31,18 +31,22 @@ export default function Contact() {
             <div className="contact-icon"><FiSend size={32} /></div>
             <p className="contact-text">{t('contact.text')}</p>
             <div className="contact-actions">
-              <a href={`mailto:${personalInfo.email}`} className="btn btn-primary">
-                <FiMail size={16} /> {t('contact.emailMe')}
-              </a>
-              <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                <FiGithub size={16} /> GitHub
-              </a>
-              <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                <FiLinkedin size={16} /> LinkedIn
-              </a>
-              <a href={personalInfo.social.gitlab} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                <FiGitlab size={16} /> GitLab
-              </a>
+              <div className="contact-email-row">
+                <a href={`mailto:${personalInfo.email}`} className="btn btn-primary">
+                  <FiMail size={16} /> {t('contact.emailMe')}
+                </a>
+              </div>
+              <div className="contact-social-row">
+                <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-sm">
+                  <FiGithub size={16} /> GitHub
+                </a>
+                <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-sm">
+                  <FiLinkedin size={16} /> LinkedIn
+                </a>
+                <a href={personalInfo.social.gitlab} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-sm">
+                  <FiGitlab size={16} /> GitLab
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
-import { FiMapPin, FiMail, FiAward, FiExternalLink } from 'react-icons/fi';
+import { FiMapPin, FiMail, FiAward, FiExternalLink, FiBook } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
+import { GiBoxingGlove } from 'react-icons/gi';
 
 const hobbyIcons = {
-  cooking: <SiInstagram size={18} />,
-  kickboxing: <FiAward size={18} />,
   events: <FiAward size={18} />,
+  kickboxing: <GiBoxingGlove size={18} />,
+  cooking: <SiInstagram size={18} />,
   coop: <FiExternalLink size={18} />,
 };
 
@@ -94,6 +95,13 @@ export default function About() {
               <div>
                 <p className="about-card-label">{t('about.role')}</p>
                 <p className="about-card-value">{lang === 'en' ? personalInfo.roleEn : personalInfo.role}</p>
+              </div>
+            </div>
+            <div className="about-card-item">
+              <FiBook className="about-card-icon" size={18} aria-hidden="true" />
+              <div>
+                <p className="about-card-label">{t('about.education')}</p>
+                <p className="about-card-value">{lang === 'en' ? 'Information Systems Engineer - UTN' : 'Ing. en Sistemas de Información - UTN'}</p>
               </div>
             </div>
           </motion.div>

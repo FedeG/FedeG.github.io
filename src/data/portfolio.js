@@ -17,22 +17,22 @@ export const personalInfo = {
   location: 'Argentina',
   languages: ['Español (Nativo)', 'Inglés (Avanzado)'],
   hobbies: [
-    { icon: 'cooking', label: 'Cocina', labelEn: 'Cooking', detail: '@al.horno.con.papa', url: 'https://alhornoconpapa.com.ar' },
+    { icon: 'events', label: 'Organizador Eventos Software Libre', labelEn: 'Free Software Events Organizer', detail: 'FLISoL, PyCon, PyDay', detailEn: 'FLISoL, PyCon, PyDay', url: null },
     { icon: 'kickboxing', label: 'Kick Boxing', labelEn: 'Kick Boxing', detail: null, detailEn: null, url: null },
-    { icon: 'events', label: 'Organizador Eventos Software Libre', labelEn: 'Free Software Events Organizer', detail: 'PyCon, PyDay, FLISoL', detailEn: 'PyCon, PyDay, FLISoL', url: null },
-    { icon: 'coop', label: 'Cooperativista', labelEn: 'Co-op Member', detail: 'Socio fundador de Devecoop', detailEn: 'Co-founder of Devecoop', url: 'https://devecoop.com' },
+    { icon: 'cooking', label: 'Cocina', labelEn: 'Cooking', detail: '@al.horno.con.papa', url: 'https://alhornoconpapa.com.ar' },
+    { icon: 'coop', label: 'Cooperativista', labelEn: 'Co-op Member', detail: 'Socio de Devecoop', detailEn: 'Member of Devecoop', url: 'https://devecoop.com' },
   ],
   githubStats: {
     repos: 58,
     followers: 41,
     stars: 8500,
     organizations: [
-      { name: 'lelylan', url: 'https://github.com/lelylan' },
-      { name: 'GNUtn', url: 'https://github.com/GNUtn' },
-      { name: 'PyAr', url: 'https://github.com/PyAr' },
       { name: 'Devecoop', url: 'https://github.com/Devecoop' },
+      { name: 'PyAr', url: 'https://github.com/PyAr' },
       { name: 'eventoL', url: 'https://github.com/eventoL' },
       { name: 'CaFeLUG', url: 'https://github.com/CaFeLUG' },
+      { name: 'GNUtn', url: 'https://github.com/GNUtn' },
+      { name: 'lelylan', url: 'https://github.com/lelylan' },
     ],
   },
   social: {
@@ -64,12 +64,12 @@ export const experience = [
     isOwn: true,
     tech: ['Python', 'Django', 'React', 'Docker', 'AWS', 'PostgreSQL'],
     highlights: [
-      'Co-fundador y socio desde 2016',
+      'Socio desde 2016',
       'Desarrollo de Gantiem, sistema de gestión de colas en tiempo real',
       'Múltiples proyectos para clientes internacionales',
     ],
     highlightsEn: [
-      'Co-founder and partner since 2016',
+      'Partner since 2016',
       'Development of Gantiem, a real-time queue management system',
       'Multiple projects for international clients',
     ],

@@ -15,16 +15,53 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
   const { t, lang, switchLang } = useI18n();
   const mobileRef = useRef(null);
 
+  // Scroll handler: set active section based on scroll position
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    const SECTION_TOP_OFFSET = 120; // px from top to consider a section "active"
+    const sectionIds = ['experience', 'skills'];
+    let requestId;
+
+    function updateActiveSection() {
+      const scrollY = window.scrollY;
+
+      // Scroll to top? -> home
+      if (scrollY < SECTION_TOP_OFFSET) {
+        setActiveSection('home');
+        requestId = requestAnimationFrame(updateActiveSection);
+        return;
+      }
+
+      // Check each section from bottom to top (last one wins)
+      let found = 'home';
+      sectionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        // Section is "active" when its top is at or above the offset
+        if (rect.top <= SECTION_TOP_OFFSET) {
+          found = id;
+        }
+      });
+      setActiveSection(found);
+      requestId = requestAnimationFrame(updateActiveSection);
+    }
+
+    // Wait a tick so lazy-loaded DOM is ready before starting
+    const startTimer = setTimeout(() => {
+      requestId = requestAnimationFrame(updateActiveSection);
+    }, 100);
+
+    return () => {
+      clearTimeout(startTimer);
+      if (requestId) cancelAnimationFrame(requestId);
+    };
+  }, [location.pathname]);
 
   useEffect(() => {
     setIsOpen(false);
@@ -58,7 +95,10 @@ export default function Navbar() {
   }, [isOpen, handleKeyDown]);
 
   const handleNavClick = (e, href) => {
-    if (href.startsWith('/#')) {
+    if (href === '/' && location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (href.startsWith('/#')) {
       const sectionId = href.substring(2);
       if (location.pathname === '/') {
         e.preventDefault();
@@ -82,16 +122,23 @@ export default function Navbar() {
           </Link>
 
           <div className="navbar-links">
-            {navLinks.map((link) => (
+            {navLinks.map((link) => {
+              const isActive = link.href === '/'
+                ? location.pathname === '/' && activeSection === 'home'
+                : link.href.startsWith('/#')
+                  ? location.pathname === '/' && activeSection === link.href.slice(2)
+                  : location.pathname === link.href;
+              return (
               <Link
                 key={link.href}
                 to={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={location.pathname === link.href ? 'active' : ''}
+                className={isActive ? 'active' : ''}
               >
                 {t(link.labelKey)}
               </Link>
-            ))}
+              );
+            })}
             <div className="navbar-social">
               <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FiGithub size={18} /></a>
               <a href={personalInfo.social.gitlab} target="_blank" rel="noopener noreferrer" aria-label="GitLab"><FiGitlab size={18} /></a>
@@ -116,16 +163,23 @@ export default function Navbar() {
       </nav>
 
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`} ref={mobileRef}>
-        {navLinks.map((link) => (
+        {navLinks.map((link) => {
+          const isActive = link.href === '/'
+            ? location.pathname === '/' && activeSection === 'home'
+            : link.href.startsWith('/#')
+              ? location.pathname === '/' && activeSection === link.href.slice(2)
+              : location.pathname === link.href;
+          return (
           <Link
             key={link.href}
             to={link.href}
             onClick={(e) => handleNavClick(e, link.href)}
-            className={location.pathname === link.href ? 'active' : ''}
+            className={isActive ? 'active' : ''}
           >
             {t(link.labelKey)}
           </Link>
-        ))}
+          );
+        })}
         <div style={{ display: 'flex', gap: '0.75rem', padding: '0.75rem' }}>
           <button onClick={toggleTheme} className="theme-toggle" aria-label={themeLabel}>
             {theme === 'dark' ? <FiSun size={16} /> : <FiMoon size={16} />}
