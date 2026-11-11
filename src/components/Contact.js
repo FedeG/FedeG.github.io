@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useI18n();
 
   return (
-    <section className="section">
+    <section id="contact" className="section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

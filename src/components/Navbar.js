@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/#experience', labelKey: 'nav.experience' },
   { href: '/#skills', labelKey: 'nav.skills' },
   { href: '/projects', labelKey: 'nav.projects' },
+  { href: '/#contact', labelKey: 'nav.contact' },
 ];
 
 export default function Navbar() {
@@ -24,7 +25,7 @@ export default function Navbar() {
   // Scroll handler: set active section based on scroll position
   useEffect(() => {
     const SECTION_TOP_OFFSET = 120; // px from top to consider a section "active"
-    const sectionIds = ['experience', 'skills'];
+    const sectionIds = ['experience', 'skills', 'contact'];
     let requestId;
 
     function updateActiveSection() {
@@ -117,7 +118,7 @@ export default function Navbar() {
     <header>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label={lang === 'es' ? 'Navegación principal' : 'Main navigation'}>
         <div className="navbar-inner">
-          <Link to="/" className="navbar-logo" aria-label="Ir al inicio">
+          <Link to="/" className="navbar-logo" aria-label={lang === 'es' ? 'Ir al inicio' : 'Go to home'}>
             {'<FG />'}
           </Link>
 

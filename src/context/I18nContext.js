@@ -4,7 +4,7 @@ const I18nContext = createContext();
 
 const translations = {
     es: {
-    nav: { home: 'Inicio', experience: 'Experiencia', skills: 'Habilidades', projects: 'Proyectos' },
+    nav: { home: 'Inicio', experience: 'Experiencia', skills: 'Habilidades', projects: 'Proyectos', contact: 'Contacto' },
     hero: {
       badge: 'Disponible para roles remotos',
       greeting: 'Hola, soy',
@@ -39,7 +39,7 @@ const translations = {
     footer: { builtWith: 'Hecho con' },
   },
     en: {
-    nav: { home: 'Home', experience: 'Experience', skills: 'Skills', projects: 'Projects' },
+    nav: { home: 'Home', experience: 'Experience', skills: 'Skills', projects: 'Projects', contact: 'Contact' },
     hero: {
       badge: 'Available for remote roles',
       greeting: "Hi, I'm",

@@ -23,7 +23,7 @@ S7. No invented metrics or personal facts: numbers absent from cv.md/linkedin.md
 | T4 | S1, S2 | Experience data: impact highlights ES/EN, standard titles, prune low-signal 2017 entries and duplicate Gantiem umbrella entry | inline | done | this commit |
 | T5 | S1, S2 | Skills: bilingual categories (fix i18n bug), AI & Data category, TypeScript/SQL/Redis, iconMap key fixes; add data-integrity tests (RED observed before fix, GREEN in commit) | inline | done | this commit |
 | T6 | S1, S2 | Projects/Community: add Cuando Jugamos, align al.horno.con.papa description with CV, dedupe React workshops from featured, add talks & conferences card | inline | done | this commit |
-| T7 | S2 | Nav/Contact: contact section anchor, nav link, active-section tracking, EN aria-label for logo | inline | pending | — |
+| T7 | S2 | Nav/Contact: contact section anchor, nav link, active-section tracking, EN aria-label for logo | inline | done | this commit |
 | T8 | S5, S6 | Final verification: CI=true npm test + npm run build; update new.md statuses and this document; report with Risk line | inline | pending | — |
 
 ## Log
