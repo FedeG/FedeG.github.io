@@ -20,7 +20,7 @@ S7. No invented metrics or personal facts: numbers absent from cv.md/linkedin.md
 | T1 | S1-S4 | Write new.md: full audit (cv.md + portfolio) with all findings, stages, and pending-user-data list | inline | done | 7cfa025 |
 | T2 | S3, S7 | Rework cv.md: executive summary, impact-oriented bullets, strict reverse-chronological order, standard titles, typo fixes, verifiable project links; add cv-en.md (English version) | inline | done | this commit |
 | T3 | S1, S2 | Hero/About/SEO: senior ES role, stack keywords line, executive bio ES/EN, Buenos Aires location, badge wording, JSON-LD and meta keywords | inline | done | this commit |
-| T4 | S1, S2 | Experience data: impact highlights ES/EN, standard titles, prune low-signal 2017 entries and duplicate Gantiem umbrella entry | inline | pending | — |
+| T4 | S1, S2 | Experience data: impact highlights ES/EN, standard titles, prune low-signal 2017 entries and duplicate Gantiem umbrella entry | inline | done | this commit |
 | T5 | S1, S2 | Skills: bilingual categories (fix i18n bug), AI & Data category, TypeScript/SQL/Redis, iconMap key fixes; add data-integrity tests (RED observed before fix, GREEN in commit) | inline | pending | — |
 | T6 | S1, S2 | Projects/Community: add Cuando Jugamos, align al.horno.con.papa description with CV, dedupe React workshops from featured, add talks & conferences card | inline | pending | — |
 | T7 | S2 | Nav/Contact: contact section anchor, nav link, active-section tracking, EN aria-label for logo | inline | pending | — |
