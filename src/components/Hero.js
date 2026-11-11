@@ -39,6 +39,10 @@ export default function Hero() {
             <TypewriterText text={tagline} />
           </p>
 
+          <p className="hero-stack" aria-label={lang === 'es' ? 'Stack principal' : 'Core stack'}>
+            {personalInfo.stack.join(' · ')}
+          </p>
+
           <nav className="hero-actions" aria-label={lang === 'es' ? 'Acciones principales' : 'Main actions'}>
             <a href="/#experience" className="btn btn-primary" aria-label={t('hero.viewExperience')}>
               {t('hero.viewExperience')}

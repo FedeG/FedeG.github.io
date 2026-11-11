@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: 'Federico Gonzalez',
   nameEn: 'Federico Gonzalez',
-  role: 'Desarrollador Full-Stack y DevOps',
+  role: 'Desarrollador Full-Stack Senior y DevOps',
   roleEn: 'Senior Full-Stack Developer & DevOps Engineer',
   taglines: [
     'Orquestando infraestructura robusta, creando experiencias de usuario fluidas.',
@@ -11,10 +11,14 @@ export const personalInfo = {
     'Orchestrating robust infrastructure, crafting seamless user experiences.',
     'Bridging the gap between scalable DevOps and high-performance Full-Stack development.',
   ],
-  bio: `Desarrollador full stack y DevOps proactivo, creativo y orientado a resultados con más de 10 años de experiencia en desarrollo de software. Apasionado por las nuevas tecnologías y el aprendizaje continuo.`,
-  bioEn: `Proactive, creative, and results-oriented Full-Stack Developer and DevOps Engineer with over 10 years of software development experience. Passionate about new technologies and continuous learning.`,
+  stack: [
+    'Python', 'Django', 'React', 'Node.js', 'TypeScript',
+    'AWS', 'Docker', 'Terraform', 'Kafka', 'PostgreSQL',
+  ],
+  bio: `Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y escalando software full-stack e infraestructura cloud. Especializado en Python/Django, Node.js/React y arquitecturas distribuidas sobre AWS, Docker, Kafka y Terraform. Trayectoria en plataformas de alto impacto: telemetría de endpoints a gran escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Socio y referente técnico de Devecoop, co-fundador de Eventol, revisor técnico editorial de Packt y orador en PyCon Argentina y FLISoL.`,
+  bioEn: `Information Systems Engineer (UTN) with 10+ years building and scaling full-stack software and cloud infrastructure. Specialized in Python/Django, Node.js/React, and distributed architectures on AWS, Docker, Kafka, and Terraform. Track record on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Partner and technical lead at Devecoop, co-founder of Eventol, Packt technical book reviewer, and speaker at PyCon Argentina and FLISoL.`,
   email: 'federico.gonzalez@devecoop.com',
-  location: 'Argentina',
+  location: 'Buenos Aires, Argentina',
   languages: ['Español (Nativo)', 'Inglés (Avanzado)'],
   hobbies: [
     { icon: 'events', label: 'Organizador Eventos Software Libre', labelEn: 'Free Software Events Organizer', detail: 'FLISoL, PyCon, PyDay', detailEn: 'FLISoL, PyCon, PyDay', url: null },

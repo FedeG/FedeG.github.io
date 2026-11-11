@@ -693,6 +693,16 @@ ul {
   margin: 0 auto 2rem;
 }
 
+.hero-stack {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  max-width: 600px;
+  margin: -1.25rem auto 2rem;
+  overflow-wrap: break-word;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

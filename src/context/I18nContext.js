@@ -6,7 +6,7 @@ const translations = {
     es: {
     nav: { home: 'Inicio', experience: 'Experiencia', skills: 'Habilidades', projects: 'Proyectos' },
     hero: {
-      badge: 'Disponible para oportunidades',
+      badge: 'Disponible para roles remotos',
       greeting: 'Hola, soy',
       viewExperience: 'Ver Experiencia',
       exploreProjects: 'Explorar Proyectos',
@@ -41,7 +41,7 @@ const translations = {
     en: {
     nav: { home: 'Home', experience: 'Experience', skills: 'Skills', projects: 'Projects' },
     hero: {
-      badge: 'Available for opportunities',
+      badge: 'Available for remote roles',
       greeting: "Hi, I'm",
       viewExperience: 'View Experience',
       exploreProjects: 'Explore Projects',

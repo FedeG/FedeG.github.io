@@ -24,8 +24,8 @@ export default function Home() {
         <title>{title}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content={lang === 'es'
-          ? 'Federico Gonzalez, desarrollador full-stack, devops, portfolio, python, django, react, argentina'
-          : 'Federico Gonzalez, full-stack developer, devops engineer, portfolio, python, django, react, argentina'} />
+          ? 'Federico Gonzalez, desarrollador full-stack senior, devops, portfolio, python, django, react, node.js, typescript, aws, terraform, kafka, docker, buenos aires, argentina, remoto'
+          : 'Federico Gonzalez, senior full-stack developer, devops engineer, portfolio, python, django, react, node.js, typescript, aws, terraform, kafka, docker, remote'} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
         <meta property="og:url" content={SITE_URL} />

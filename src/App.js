@@ -18,7 +18,7 @@ const personJsonLd = {
   givenName: 'Federico',
   familyName: 'Gonzalez',
   jobTitle: ['Senior Full-Stack Developer', 'DevOps Engineer'],
-  description: 'Senior Full-Stack Developer & DevOps Engineer con más de 10 años de experiencia.',
+  description: 'Senior Full-Stack Developer & DevOps Engineer with 10+ years of experience in Python, Django, React, Node.js, AWS, Kafka, and Terraform.',
   url: SITE_URL,
   sameAs: [
     'https://github.com/Fedeg',
@@ -26,7 +26,7 @@ const personJsonLd = {
     'https://www.linkedin.com/in/fedeg1/',
   ],
   email: 'federico.gonzalez@devecoop.com',
-  knowsAbout: ['Python', 'Django', 'React', 'Node.js', 'AWS', 'Docker', 'Terraform', 'DevOps'],
+  knowsAbout: ['Python', 'Django', 'React', 'Node.js', 'TypeScript', 'AWS', 'Docker', 'Terraform', 'Kafka', 'PostgreSQL', 'CI/CD', 'LLM integration'],
   alumniOf: 'Universidad Tecnológica Nacional',
   nationality: { '@type': 'Country', name: 'Argentina' },
 };
