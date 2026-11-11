@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: 'Federico Gonzalez',
   nameEn: 'Federico Gonzalez',
-  role: 'Desarrollador Full-Stack Senior y DevOps',
-  roleEn: 'Senior Full-Stack Developer & DevOps Engineer',
+  role: 'Senior Software Engineer · Full-Stack & DevOps',
+  roleEn: 'Senior Software Engineer · Full-Stack & DevOps',
   taglines: [
     'Orquestando infraestructura robusta, creando experiencias de usuario fluidas.',
     'Uniendo el gap entre DevOps escalable y desarrollo Full-Stack de alto rendimiento.',
@@ -12,11 +12,11 @@ export const personalInfo = {
     'Bridging the gap between scalable DevOps and high-performance Full-Stack development.',
   ],
   stack: [
-    'Python', 'Django', 'React', 'Node.js', 'TypeScript',
-    'AWS', 'Docker', 'Terraform', 'Kafka', 'PostgreSQL',
+    'Python', 'Django', 'React', 'Node.js', 'TypeScript', 'Docker',
+    'Linux', 'AWS', 'Terraform', 'Kafka', 'PostgreSQL',
   ],
-  bio: `Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y escalando software full-stack e infraestructura cloud. Especializado en Python/Django, Node.js/React y arquitecturas distribuidas sobre AWS, Docker, Kafka y Terraform. Trayectoria en plataformas de alto impacto: telemetría de endpoints a gran escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Socio y referente técnico de Devecoop, co-fundador de Eventol, revisor técnico editorial de Packt y orador en PyCon Argentina y FLISoL.`,
-  bioEn: `Information Systems Engineer (UTN) with 10+ years building and scaling full-stack software and cloud infrastructure. Specialized in Python/Django, Node.js/React, and distributed architectures on AWS, Docker, Kafka, and Terraform. Track record on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Partner and technical lead at Devecoop, co-founder of Eventol, Packt technical book reviewer, and speaker at PyCon Argentina and FLISoL.`,
+  bio: `Software Engineer con más de 10 años de experiencia en desarrollo full-stack, backend e infraestructura. Trabajo principalmente con Python y JavaScript, y tengo experiencia administrando y desplegando aplicaciones sobre entornos Linux y Docker. A lo largo de mi carrera participé en productos, proyectos para clientes y proyectos open source, involucrándome tanto en el desarrollo como en las decisiones técnicas y de arquitectura necesarias para que las aplicaciones funcionen y evolucionen. Trabajé en plataformas de alto impacto: telemetría de endpoints a escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Ingeniero en Sistemas de Información (UTN), socio de Devecoop, co-fundador de EventoL y revisor técnico editorial de Packt Publishing.`,
+  bioEn: `Software Engineer with 10+ years of experience in full-stack development, backend and infrastructure. I work mainly with Python and JavaScript, and I have experience managing and deploying applications on Linux and Docker environments. Throughout my career I have participated in products, client projects and open source projects, getting involved in both development and the technical and architectural decisions required for applications to run and evolve. I worked on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Information Systems Engineer (UTN), partner at Devecoop, co-founder of EventoL and Packt Publishing technical reviewer.`,
   email: 'federicogonzalez761@gmail.com',
   yearsExperience: 10,
   location: 'Buenos Aires, Argentina',
@@ -47,6 +47,11 @@ export const personalInfo = {
 }
 
 export const skills = [
+  {
+    title: 'Ingeniería de Software',
+    titleEn: 'Software Engineering',
+    items: ['Arquitectura de Software', 'REST APIs', 'Microservicios', 'DevOps', 'Linux'],
+  },
   {
     title: 'Lenguajes de Programación',
     titleEn: 'Programming Languages',
@@ -83,24 +88,26 @@ export const experience = [
     period: 'Oct 2016 - Presente',
     periodEn: 'Oct 2016 - Present',
     location: 'Argentina',
-    description: 'Devecoop es una cooperativa de software de la cual soy socio desde 2016. Trabajamos con diferentes lenguajes y tecnologías, siendo Python la tecnología principal. Desde 2016 hasta el presente, trabajo desde Devecoop en otros empleos como staff augmentation o desarrollando nuestros propios proyectos.',
-    descriptionEn: 'Devecoop is a software cooperative where I have been a partner since 2016. We work with different languages and technologies, with Python as the main technology. From 2016 to present, I work through Devecoop on other jobs as staff augmentation or developing our own projects.',
+    description: 'Devecoop es una cooperativa de software de la que soy socio desde 2016. Trabajo en proyectos a medida y staff augmentation para clientes de USA y LATAM, y en el desarrollo de productos propios.',
+    descriptionEn: 'Devecoop is a software cooperative where I have been a partner since 2016. I work on custom projects and staff augmentation for clients in the US and LATAM, and on the development of our own products.',
     current: true,
     isOwn: true,
-    tech: ['Python', 'Django', 'React', 'Node.js', 'Docker', 'AWS', 'Terraform', 'PostgreSQL', 'LangChain', 'Langfuse'],
+    tech: ['Python', 'Django', 'React', 'Node.js', 'Docker', 'Linux', 'AWS', 'Terraform', 'PostgreSQL', 'LangChain', 'Langfuse'],
     highlights: [
-      'Liderazgo técnico de proyectos a medida y staff augmentation para clientes internacionales de USA y LATAM',
-      'Arquitecturas distribuidas e infraestructura cloud con AWS, Terraform, Docker y Ansible',
-      'Dirección de IT interna: pipelines CI/CD y mentoría de nuevos ingenieros',
-      'R&D en IA y LLMs: sistema RAG con Qdrant/pgvector y observabilidad con Langfuse',
-      'Desarrollo de Gantiem, sistema de gestión de colas en tiempo real',
+      'Desarrollo full-stack de aplicaciones web y productos digitales, con backend y frontend según las necesidades de cada proyecto',
+      'Diseño e implementación de APIs y servicios; arquitectura, infraestructura y mantenimiento de entornos de desarrollo y producción',
+      'Despliegue y operación de aplicaciones con Docker, Linux, AWS, Terraform y pipelines CI/CD',
+      'Liderazgo técnico, selección, onboarding y mentoría de ingenieros; trabajo junto a producto y diseño durante todo el ciclo',
+      'R&D en IA y LLMs: sistema RAG con Qdrant/pgvector, observabilidad con Langfuse y automatización con n8n y Ollama',
+      'Desarrollo de Gantiem, sistema de gestión de colas en tiempo real con Django Channels y WebSockets',
     ],
     highlightsEn: [
-      'Technical lead for custom projects and staff augmentation for international clients in the US and LATAM',
-      'Distributed architectures and cloud infrastructure with AWS, Terraform, Docker and Ansible',
-      'Internal IT direction: CI/CD pipelines and mentoring of new engineers',
-      'AI and LLM R&D: RAG system with Qdrant/pgvector and observability with Langfuse',
-      'Development of Gantiem, a real-time queue management system',
+      'Full-stack development of web applications and digital products, with backend and frontend tailored to each project',
+      'API and service design and implementation; architecture, infrastructure and maintenance of development and production environments',
+      'Application deployment and operations with Docker, Linux, AWS, Terraform and CI/CD pipelines',
+      'Technical leadership, hiring, onboarding and mentoring of engineers; working alongside product and design throughout the cycle',
+      'AI and LLM R&D: RAG system with Qdrant/pgvector, observability with Langfuse and automation with n8n and Ollama',
+      'Development of Gantiem, a real-time queue management system with Django Channels and WebSockets',
     ],
   },
   {
@@ -250,7 +257,7 @@ export const projects = [
       { label: 'Sitio Web', url: 'https://alhornoconpapa.com.ar' },
       { label: 'GitHub', url: 'https://github.com/Fedeg/al.horno.con.papa' },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'cuandojugamos',
@@ -258,12 +265,12 @@ export const projects = [
     titleEn: 'Cuando Jugamos',
     role: 'Creador & Desarrollador',
     roleEn: 'Creator & Developer',
-    description: 'SaaS PWA multilenguaje para reserva de instalaciones deportivas, gestión de torneos y sistema de ranking ELO.',
-    descriptionEn: 'Multilingual PWA SaaS for sports facility booking, tournament management and ELO ranking system.',
+    description: 'SaaS PWA multilenguaje para reserva de instalaciones deportivas, gestión de torneos y ranking ELO. Diseñé y desarrollé la arquitectura de la plataforma, las funcionalidades de gestión y gamificación, las APIs y la configuración de los entornos de despliegue.',
+    descriptionEn: 'Multilingual PWA SaaS for sports facility booking, tournament management and ELO ranking. I designed and built the platform architecture, management and gamification features, the APIs and the deployment environment configuration.',
     category: ['full-stack'],
     tech: ['React', 'Django'],
     links: [],
-    featured: false,
+    featured: true,
   },
   {
     id: 'anush',
@@ -286,8 +293,8 @@ export const projects = [
     titleEn: 'Eventol',
     role: 'Co-Fundador & Contribuidor Principal',
     roleEn: 'Co-Founder & Lead Contributor',
-    description: 'Eventol es un software de gestión de conferencias e install fest desarrollado inicialmente para gestionar FLISoL (el evento install fest más popular de Argentina). Es software libre y soy co-fundador. Usado por la Comunidad Python Argentina (PyCon, PyDay, etc.).',
-    descriptionEn: 'Eventol is conference and install fest management software initially developed to manage FLISoL (the most popular install fest in Argentina). It is free software and I am co-founder. Used by the Python Argentina Community (PyCon, PyDay, etc.).',
+    description: 'Plataforma open source de gestión de conferencias e install fest, co-fundada y adoptada por FLISoL y la comunidad Python Argentina (PyCon, PyDay). Diseñé y desarrollo funcionalidades full-stack con Django y React, y participo en las decisiones de arquitectura y despliegue.',
+    descriptionEn: 'Open-source conference and install fest management platform, co-founded and adopted by FLISoL and the Python Argentina community (PyCon, PyDay). I design and build full-stack features with Django and React, and take part in architecture and deployment decisions.',
     category: ['open-source', 'full-stack'],
     tech: ['Django', 'Python', 'React.js', 'Docker Compose'],
     links: [
@@ -325,7 +332,7 @@ export const projects = [
     links: [
       { label: 'GitHub Profile', url: 'https://github.com/Fedeg' },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'pancreas-artificial',
@@ -340,7 +347,7 @@ export const projects = [
     links: [
       { label: 'GitHub', url: 'https://github.com/Fedeg/TDC-pancreas-artificial' },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'machine-learning',
@@ -385,9 +392,9 @@ export const projects = [
     category: ['devops', 'open-source'],
     tech: ['Docker', 'Docker Compose', 'MEAN Stack'],
     links: [
-      { label: 'GitHub Profile', url: 'https://github.com/Fedeg' },
+      { label: 'MEAN.js', url: 'https://github.com/meanjs/meanjs' },
     ],
-    featured: false,
+    featured: true,
   },
   {
     id: 'leylan',
@@ -432,7 +439,7 @@ export const projects = [
     links: [
       { label: 'LinkedIn', url: 'https://www.linkedin.com/in/fedeg1/' },
     ],
-    featured: true,
+    featured: false,
   },
 ]
 

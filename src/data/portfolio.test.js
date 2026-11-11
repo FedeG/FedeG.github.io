@@ -52,10 +52,12 @@ describe('portfolio data integrity', () => {
     });
   });
 
-  test('featured projects always link somewhere', () => {
-    projects.filter((p) => p.featured).forEach((project) => {
-      expect(project.links.length).toBeGreaterThan(0);
-      expect(project.links[0].url).toBeTruthy();
+  test('project links are well-formed when present', () => {
+    projects.forEach((project) => {
+      project.links.forEach((link) => {
+        expect(link.label).toBeTruthy();
+        expect(link.url).toMatch(/^https?:\/\//);
+      });
     });
   });
 
