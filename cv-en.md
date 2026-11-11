@@ -1,6 +1,6 @@
 # Federico Gonzalez
 
-**Senior Full-Stack Developer & DevOps Engineer**
+**Senior Software Engineer · Full-Stack & DevOps**
 Buenos Aires, Argentina | +54 9 11 7020-7384 | federicogonzalez761@gmail.com
 [LinkedIn](https://linkedin.com/in/fedeg1) | [GitHub](https://github.com/fedeg) | [Portfolio](https://fedeg.github.io/)
 
@@ -8,7 +8,7 @@ Buenos Aires, Argentina | +54 9 11 7020-7384 | federicogonzalez761@gmail.com
 
 ## Professional Summary
 
-Information Systems Engineer (UTN) with 10+ years building and scaling full-stack software and cloud infrastructure. Specialized in Python/Django, Node.js/React, and distributed architectures on AWS, Docker, Kafka, and Terraform. Track record on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Partner and technical lead at Devecoop, co-founder of Eventol (open-source event management software used by FLISoL and the Python Argentina community), Packt Publishing technical book reviewer, and corporate trainer for companies such as Mercado Libre.
+Information Systems Engineer (UTN) with 10+ years of experience in full-stack development, backend and infrastructure. I work mainly with Python and JavaScript, and I have experience managing and deploying applications on Linux and Docker environments. Throughout my career I have participated in products, client projects and open source projects, getting involved in both development and the technical and architectural decisions required for applications to run and evolve. I worked on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Partner at Devecoop, co-founder of EventoL (open-source event management software used by FLISoL and the Python Argentina community) and Packt Publishing technical book reviewer.
 
 ---
 
@@ -18,10 +18,10 @@ Information Systems Engineer (UTN) with 10+ years building and scaling full-stac
 
 *October 2016 – Present | Buenos Aires, Argentina*
 
-- Technical lead for custom software projects and staff augmentation for international clients in the US and LATAM.
-- Designed distributed architectures and cloud infrastructure with AWS, Terraform, Docker, and Ansible.
-- Directed internal IT: CI/CD pipelines, deployment of cooperative management tooling, and server maintenance.
-- Led the hiring process, technical onboarding, and mentoring of new software engineers.
+- Full-stack development of web applications and digital products, with backend and frontend tailored to each project.
+- API and service design and implementation; architecture, infrastructure and maintenance of development and production environments.
+- Application deployment and operations with Docker, Linux, AWS, Terraform, and CI/CD pipelines.
+- Technical leadership, hiring, onboarding, and mentoring of engineers; working alongside product and design throughout the project cycle.
 - AI and LLM R&D: RAG system with Qdrant/pgvector, observability with Langfuse, and workflow automation with n8n and Ollama.
 - Developed Gantiem, a real-time queue management system (Django Channels, WebSockets).
 - **Technologies:** Python, Django, React, React Native, Node.js, Docker, AWS, Terraform, PostgreSQL, LangChain, Langfuse, Ollama.
@@ -92,6 +92,7 @@ Information Systems Engineer (UTN) with 10+ years building and scaling full-stac
 
 ## Technical Skills
 
+- **Software Engineering:** Software architecture, REST API design, microservices, DevOps, Linux server administration.
 - **Languages:** Python, JavaScript/TypeScript (ES6+), Node.js, Bash, SQL, C/C++, Go, Ruby.
 - **Frameworks & Libraries:** Django, React.js, React Native, Express.js, Angular, Redux, SASS/LESS.
 - **Databases & Search:** PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, CouchDB, Qdrant.
@@ -102,11 +103,11 @@ Information Systems Engineer (UTN) with 10+ years building and scaling full-stac
 
 ## Featured Projects & Open Source
 
-- **EventoL** ([eventol.org](https://eventol.org)): co-founder and maintainer. Open-source event management platform adopted by FLISoL and the Python Argentina community (PyCon, PyDay). *(Django, React, Docker)*
+- **EventoL** ([eventol.org](https://eventol.org)): co-founder and maintainer. Open-source event management platform adopted by FLISoL and the Python Argentina community (PyCon, PyDay). I design and build full-stack features with Django and React, and take part in architecture and deployment decisions. *(Django, React, Docker)*
 - **Al Horno con Papa** ([alhornoconpapa.com.ar](https://alhornoconpapa.com.ar)): mobile-first, SEO-optimized platform with a local AI pipeline for recipe scraping and structuring. *(React, Python, Ollama)*
-- **Cuando Jugamos**: multilingual PWA SaaS for sports facility bookings, tournament management, and an ELO ranking system. *(React, Django)*
+- **Cuando Jugamos**: multilingual PWA SaaS for sports facility bookings, tournament management, and an ELO ranking system. I designed and built the platform architecture, management and gamification features, the APIs, and the deployment environment configuration. *(React, Django)*
 - **Technical Book Reviewer (Packt Publishing):** official technical reviewer of *Practical Python Programming for IoT* and *Hands-On Internet of Things with MQTT*.
-- **Open Source Contributions:** accepted PRs in projects such as MEAN.js (production Dockerization) and the Lelylan IoT Platform.
+- **Open Source Contributions:** accepted PRs in MEAN.js (production Dockerization) and the Lelylan IoT Platform; contributions to Encryptr, SpiderOak's zero-knowledge password manager, while working at the company.
 - **Talks & Conferences:** speaker and organizer at PyCon Argentina, FLISoL, Software Freedom Day, and Python Argentina events.
 
 ---

@@ -1,6 +1,6 @@
 # Federico Gonzalez
 
-**Senior Full-Stack Developer & DevOps Engineer**
+**Senior Software Engineer · Full-Stack & DevOps**
 Buenos Aires, Argentina | +54 9 11 7020-7384 | federicogonzalez761@gmail.com
 [LinkedIn](https://linkedin.com/in/fedeg1) | [GitHub](https://github.com/fedeg) | [Portfolio](https://fedeg.github.io/)
 
@@ -8,7 +8,7 @@ Buenos Aires, Argentina | +54 9 11 7020-7384 | federicogonzalez761@gmail.com
 
 ## Perfil Profesional
 
-Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y escalando software full-stack e infraestructura cloud. Especializado en Python/Django, Node.js/React y arquitecturas distribuidas sobre AWS, Docker, Kafka y Terraform. Trayectoria en plataformas de alto impacto: telemetría de endpoints a gran escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Socio y referente técnico de Devecoop, co-fundador de Eventol (software libre de gestión de eventos usado en FLISoL y la comunidad de Python Argentina), revisor técnico editorial de Packt Publishing y capacitador corporativo para empresas como Mercado Libre.
+Ingeniero en Sistemas de Información (UTN) con más de 10 años de experiencia en desarrollo full-stack, backend e infraestructura. Trabajo principalmente con Python y JavaScript, y tengo experiencia administrando y desplegando aplicaciones sobre entornos Linux y Docker. A lo largo de mi carrera participé en productos, proyectos para clientes y proyectos open source, involucrándome tanto en el desarrollo como en las decisiones técnicas y de arquitectura necesarias para que las aplicaciones funcionen y evolucionen. Trabajé en plataformas de alto impacto: telemetría de endpoints a escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Socio de Devecoop, co-fundador de EventoL (software libre de gestión de eventos usado en FLISoL y la comunidad de Python Argentina) y revisor técnico editorial de Packt Publishing.
 
 ---
 
@@ -18,10 +18,10 @@ Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y 
 
 *Octubre 2016 – Presente | Buenos Aires, Argentina*
 
-- Liderazgo técnico de proyectos de software a medida y staff augmentation para clientes internacionales de USA y LATAM.
-- Diseño de arquitecturas distribuidas e infraestructura cloud con AWS, Terraform, Docker y Ansible.
-- Dirección del área de IT interna: pipelines CI/CD, despliegue de herramientas de gestión cooperativa y mantenimiento de servidores.
-- Liderazgo del proceso de selección, onboarding técnico y mentoría de nuevos ingenieros de software.
+- Desarrollo full-stack de aplicaciones web y productos digitales, con backend y frontend según las necesidades de cada proyecto.
+- Diseño e implementación de APIs y servicios; arquitectura, infraestructura y mantenimiento de entornos de desarrollo y producción.
+- Despliegue y operación de aplicaciones con Docker, Linux, AWS, Terraform y pipelines CI/CD.
+- Liderazgo técnico, selección, onboarding y mentoría de ingenieros; trabajo junto a producto y diseño durante todo el ciclo del proyecto.
 - R&D en IA y LLMs: sistema RAG con Qdrant/pgvector, observabilidad con Langfuse y automatización con n8n y Ollama.
 - Desarrollo de Gantiem, sistema de gestión de colas en tiempo real (Django Channels, WebSockets).
 - **Tecnologías:** Python, Django, React, React Native, Node.js, Docker, AWS, Terraform, PostgreSQL, LangChain, Langfuse, Ollama.
@@ -92,6 +92,7 @@ Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y 
 
 ## Habilidades Técnicas
 
+- **Ingeniería de Software:** Arquitectura de software, diseño de APIs REST, microservicios, DevOps, administración de servidores Linux.
 - **Lenguajes:** Python, JavaScript/TypeScript (ES6+), Node.js, Bash, SQL, C/C++, Go, Ruby.
 - **Frameworks & Librerías:** Django, React.js, React Native, Express.js, Angular, Redux, SASS/LESS.
 - **Bases de Datos & Buscadores:** PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, CouchDB, Qdrant.
@@ -102,11 +103,11 @@ Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y 
 
 ## Proyectos Destacados y Código Abierto
 
-- **EventoL** ([eventol.org](https://eventol.org)): co-fundador y mantenedor. Plataforma open source de gestión de eventos adoptada por FLISoL y la comunidad de Python Argentina (PyCon, PyDay). *(Django, React, Docker)*
+- **EventoL** ([eventol.org](https://eventol.org)): co-fundador y mantenedor. Plataforma open source de gestión de eventos adoptada por FLISoL y la comunidad de Python Argentina (PyCon, PyDay). Diseño y desarrollo funcionalidades full-stack con Django y React, y participo en las decisiones de arquitectura y despliegue. *(Django, React, Docker)*
 - **Al Horno con Papa** ([alhornoconpapa.com.ar](https://alhornoconpapa.com.ar)): plataforma mobile-first optimizada para SEO con pipeline de IA local para scraping y estructuración de recetas. *(React, Python, Ollama)*
-- **Cuando Jugamos**: SaaS PWA multilenguaje para reserva de instalaciones deportivas, gestión de torneos y sistema de ranking ELO. *(React, Django)*
+- **Cuando Jugamos**: SaaS PWA multilenguaje para reserva de instalaciones deportivas, gestión de torneos y ranking ELO. Diseñé y desarrollé la arquitectura de la plataforma, las funcionalidades de gestión y gamificación, las APIs y la configuración de los entornos de despliegue. *(React, Django)*
 - **Revisión Técnica Editorial (Packt Publishing):** revisor técnico oficial de los libros *"Practical Python Programming for IoT"* y *"Hands-On Internet of Things with MQTT"*.
-- **Contribuciones Open Source:** PRs aceptados en proyectos como MEAN.js (Dockerización para producción) y Lelylan IoT Platform.
+- **Contribuciones Open Source:** PRs aceptados en MEAN.js (Dockerización para producción) y Lelylan IoT Platform; contribuciones a Encryptr, el password manager zero-knowledge de SpiderOak, mientras trabajaba en la compañía.
 - **Charlas y Conferencias:** orador y organizador en PyCon Argentina, FLISoL, Software Freedom Day y eventos de Python Argentina.
 
 ---
