@@ -46,12 +46,33 @@ export const personalInfo = {
   },
 }
 
-export const skills = {
-  'Lenguajes de Programación': ['Python', 'JavaScript', 'Ruby', 'Java', 'Bash', 'C', 'C++', 'Go'],
-  'Frameworks y Herramientas': ['Django', 'React', 'React-Native', 'Angular', 'Node.js', 'Redux', 'GraphQL', 'SASS', 'LESS', 'Docker', 'Docker Compose', 'Terraform', 'Ansible', 'Webpack', 'd3.js'],
-  'Bases de Datos': ['PostgreSQL', 'MySQL', 'MongoDB', 'CouchDB', 'Elasticsearch'],
-  'DevOps e Infraestructura': ['AWS (EC2, S3, RDS, Lambda)', 'Digital Ocean', 'Docker', 'Terraform', 'Ansible', 'Nginx', 'Kafka'],
-}
+export const skills = [
+  {
+    title: 'Lenguajes de Programación',
+    titleEn: 'Programming Languages',
+    items: ['Python', 'JavaScript', 'TypeScript', 'Node.js', 'Bash', 'SQL', 'C', 'C++', 'Go', 'Ruby'],
+  },
+  {
+    title: 'Frameworks y Librerías',
+    titleEn: 'Frameworks & Libraries',
+    items: ['Django', 'React', 'React Native', 'Angular', 'Express.js', 'Redux', 'GraphQL', 'SASS', 'LESS', 'D3.js'],
+  },
+  {
+    title: 'Bases de Datos y Buscadores',
+    titleEn: 'Databases & Search',
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'CouchDB', 'Qdrant'],
+  },
+  {
+    title: 'Cloud, DevOps e Infraestructura',
+    titleEn: 'Cloud, DevOps & Infrastructure',
+    items: ['AWS (EC2, S3, RDS, Lambda)', 'Docker', 'Docker Compose', 'Terraform', 'Ansible', 'Nginx', 'Kafka', 'CI/CD (GitHub Actions, GitLab CI)'],
+  },
+  {
+    title: 'IA y Automatización',
+    titleEn: 'AI & Automation',
+    items: ['Ollama', 'LangChain', 'Langfuse', 'n8n', 'Flowise', 'RAG', 'pgvector', 'Prompt Engineering'],
+  },
+]
 
 export const experience = [
   {
@@ -88,6 +109,7 @@ export const experience = [
     company: 'Batuta',
     companyUrl: 'https://batuta.com',
     period: 'Sept 2022 - Feb 2026',
+    periodEn: 'Sep 2022 - Feb 2026',
     location: 'San Francisco (Remote)',
     description: 'Batuta orquesta el futuro de la ciberseguridad a través de la Inteligencia de Endpoints. Parte de la Comunidad Global de Innovadores del Foro Económico Mundial y del Centro de Ciberseguridad, con sede en San Francisco. Trabajando en un producto de ciberseguridad con responsabilidades full stack, transformando datos de endpoints en información accionable.',
     descriptionEn: 'Batuta orchestrates the future of cybersecurity through Endpoint Intelligence. Part of the World Economic Forum Global Innovators Community and the Cybersecurity Center, based in San Francisco. Working on a cybersecurity product with full-stack responsibilities, transforming endpoint data into actionable insights.',
@@ -112,6 +134,7 @@ export const experience = [
     company: 'Kilimo',
     companyUrl: 'https://kilimo.com',
     period: 'Sep 2020 - Jul 2022',
+    periodEn: 'Sep 2020 - Jul 2022',
     location: 'Argentina (Remote)',
     description: 'Kilimo es una plataforma de Gestión Efectiva de Riego que entrega resultados de rendimiento y calidad con menos recursos. Diferentes servicios para recopilar y analizar datos sobre campos y el medio ambiente (datos climáticos, satelitales, sensores) y calcular el balance hídrico y recomendaciones de riego.',
     descriptionEn: 'Kilimo is an Effective Irrigation Management platform that delivers performance and quality results with fewer resources. Different services to collect and analyze field and environmental data (climate, satellite, sensor data) and calculate water balance and irrigation recommendations.',
@@ -134,6 +157,7 @@ export const experience = [
     company: 'Deportify',
     companyUrl: null,
     period: 'Dic 2019 - May 2020',
+    periodEn: 'Dec 2019 - May 2020',
     location: 'Argentina',
     description: 'Deportify es una aplicación móvil para la reserva y gestión de clubes de fútbol y tenis. La aplicación fue desarrollada en React Native y Django.',
     descriptionEn: 'Deportify is a mobile application for booking and managing soccer and tennis clubs. The app was developed in React Native and Django.',
@@ -154,6 +178,7 @@ export const experience = [
     company: 'Receptiviti Inc. (Canadá)',
     companyUrl: 'https://receptiviti.com',
     period: 'Dic 2018 - Dic 2019',
+    periodEn: 'Dec 2018 - Dec 2019',
     location: 'Canadá (Remote)',
     description: 'Creación de gráficos usando d3 y React-vis para visualización de datos, agregar responsividad a diseños estáticos, mejoras de consultas GraphQL. Creación de página web completa desde bocetos. Trabajando con prácticas Ágiles como TDD, Integración Continua y Demos.',
     descriptionEn: 'Creating charts using d3 and React-vis for data visualization, adding responsiveness to static designs, GraphQL query improvements. Building complete web pages from sketches. Working with Agile practices like TDD, Continuous Integration and Demos.',
@@ -176,6 +201,7 @@ export const experience = [
     company: 'Exo',
     companyUrl: null,
     period: 'Dic 2013 - Oct 2016',
+    periodEn: 'Dec 2013 - Oct 2016',
     location: 'Argentina',
     description: 'Proyectos IoT para gestión de eventos en tiempo real y control de hardware desde sensores. Los proyectos fueron desarrollados usando MQTT, Node.js, C++ y WebSockets. Algunos proyectos fueron desarrollados usando Python, Golang y CouchDB.',
     descriptionEn: 'IoT projects for real-time event management and hardware control from sensors. Projects were developed using MQTT, Node.js, C++ and WebSockets. Some projects were developed using Python, Golang and CouchDB.',
