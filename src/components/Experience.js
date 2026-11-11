@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { experience } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import { FiCalendar, FiMapPin, FiExternalLink, FiAward, FiStar } from 'react-icons/fi';
@@ -18,9 +17,8 @@ function ExpCard({ exp, index }) {
   const highlights = lang === 'en' && exp.highlightsEn ? exp.highlightsEn : exp.highlights;
 
   return (
-    <motion.div
+    <div
       className="timeline-card"
-      whileHover={{ y: -3, transition: { duration: 0.2 } }}
     >
       <div className="timeline-header">
         <div>
@@ -54,7 +52,7 @@ function ExpCard({ exp, index }) {
           <span key={t}>{t}</span>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -66,57 +64,38 @@ export default function Experience() {
   return (
     <section id="experience" className="section">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h2 className="section-title">{t('experience.title')}</h2>
           <p className="section-subtitle">{t('experience.subtitle')}</p>
           <div className="glow-line" />
-        </motion.div>
+        </div>
 
         {current && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="current-role"
+          <div
+            className="current-role fade-in-up"
           >
             <div className="current-role-badge">
               <FiStar size={14} /> {lang === 'es' ? 'Rol Actual' : 'Current Role'}
             </div>
             <ExpCard exp={current} />
-          </motion.div>
+          </div>
         )}
 
         <div className="timeline" style={{ marginTop: current ? '3rem' : 0 }}>
-          <motion.div
-            className="timeline-line"
-            initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
-            style={{ transformOrigin: 'top' }}
-          />
+          <div className="timeline-line" />
 
           {past.map((exp, i) => (
-            <motion.div
+            <div
               key={exp.company + i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="timeline-item"
+              className="timeline-item fade-in-up"
+              style={{ animationDelay: `${i * 60}ms` }}
             >
               <div className="timeline-spacer" />
               <div className={`timeline-dot ${companyColors[exp.company] || 'timeline-dot-batuta'}`} />
               <div className="timeline-content">
                 <ExpCard exp={exp} />
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import { FiMail, FiGithub, FiLinkedin, FiGitlab, FiSend } from 'react-icons/fi';
@@ -9,25 +8,14 @@ export default function Contact() {
   return (
     <section id="contact" className="section">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h2 className="section-title">{t('contact.title')}</h2>
           <p className="section-subtitle">{t('contact.subtitle')}</p>
           <div className="glow-line" />
-        </motion.div>
+        </div>
 
         <div className="contact-wrap">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            className="contact-card"
-          >
+          <div className="contact-card fade-in-up">
             <div className="contact-icon"><FiSend size={32} /></div>
             <p className="contact-text">{t('contact.text')}</p>
             <div className="contact-actions">
@@ -48,7 +36,7 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { skills } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import {
@@ -61,26 +60,18 @@ export default function Skills() {
   return (
     <section id="skills" className="section section-dark">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h2 className="section-title">{t('skills.title')}</h2>
           <p className="section-subtitle">{t('skills.subtitle')}</p>
           <div className="glow-line" />
-        </motion.div>
+        </div>
 
         <div className="skills-grid">
           {skills.map((category, i) => (
-            <motion.div
+            <div
               key={category.title}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="card"
+              className="card fade-in-up"
+              style={{ animationDelay: `${i * 60}ms` }}
             >
               <h3 className="skill-category-title">
                 {lang === 'en' && category.titleEn ? category.titleEn : category.title}
@@ -93,7 +84,7 @@ export default function Skills() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
