@@ -242,15 +242,28 @@ export const projects = [
     titleEn: 'al.horno.con.papa',
     role: 'Creador & Desarrollador',
     roleEn: 'Creator & Developer',
-    description: 'Blog de cocina con recetas, fotos e integración con Instagram API. Construido con React y Python, con generación de imágenes por IA.',
-    descriptionEn: 'Cooking blog with recipes, photos and Instagram API integration. Built with React and Python, with AI image generation.',
+    description: 'Plataforma mobile-first optimizada para SEO con pipeline de IA local para scraping y estructuración de recetas.',
+    descriptionEn: 'Mobile-first platform optimized for SEO with a local AI pipeline for recipe scraping and structuring.',
     category: ['full-stack'],
-    tech: ['React', 'Python', 'Instagram API', 'IA'],
+    tech: ['React', 'Python', 'Ollama'],
     links: [
       { label: 'Sitio Web', url: 'https://alhornoconpapa.com.ar' },
       { label: 'GitHub', url: 'https://github.com/Fedeg/al.horno.con.papa' },
     ],
     featured: true,
+  },
+  {
+    id: 'cuandojugamos',
+    title: 'Cuando Jugamos',
+    titleEn: 'Cuando Jugamos',
+    role: 'Creador & Desarrollador',
+    roleEn: 'Creator & Developer',
+    description: 'SaaS PWA multilenguaje para reserva de instalaciones deportivas, gestión de torneos y sistema de ranking ELO.',
+    descriptionEn: 'Multilingual PWA SaaS for sports facility booking, tournament management and ELO ranking system.',
+    category: ['full-stack'],
+    tech: ['React', 'Django'],
+    links: [],
+    featured: false,
   },
   {
     id: 'anush',
@@ -359,7 +372,7 @@ export const projects = [
       { label: 'Facttic Workshop', url: 'https://github.com/Fedeg/react-redux-workshop' },
       { label: 'Tecso Hooks Workshop', url: 'https://github.com/Fedeg/react-workshop-16-8-with-hooks' },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'meanjs',
@@ -378,12 +391,12 @@ export const projects = [
   },
   {
     id: 'leylan',
-    title: 'Leylan IoT Platform',
-    titleEn: 'Leylan IoT Platform',
+    title: 'Lelylan IoT Platform',
+    titleEn: 'Lelylan IoT Platform',
     role: 'Contribuidor DevOps e Infraestructura',
     roleEn: 'DevOps & Infrastructure Contributor',
-    description: 'Plataforma IoT en la nube con arquitectura de microservicios. Miembro activo de la organización Leylan, contribuyendo en resolución de bugs, reporte de issues y deployment con Docker Compose.',
-    descriptionEn: 'Cloud IoT platform with microservices architecture. Active member of the Leylan organization, contributing to bug fixing, issue reporting and deployment with Docker Compose.',
+    description: 'Plataforma IoT en la nube con arquitectura de microservicios. Miembro activo de la organización Lelylan, contribuyendo en resolución de bugs, reporte de issues y deployment con Docker Compose.',
+    descriptionEn: 'Cloud IoT platform with microservices architecture. Active member of the Lelylan organization, contributing to bug fixing, issue reporting and deployment with Docker Compose.',
     category: ['iot', 'devops', 'open-source'],
     tech: ['Microservicios', 'Docker', 'Docker Compose', 'MQTT', 'Arquitectura IoT Cloud'],
     links: [
@@ -435,6 +448,18 @@ export const openSource = [
     itemsEn: [
       'Practical Python Programming for IoT (2019) - Technical review and code testing',
       'Hands-On Internet of Things with MQTT (2019) - Technical review and code testing',
+    ],
+  },
+  {
+    title: 'Charlas y Conferencias',
+    titleEn: 'Talks & Conferences',
+    items: [
+      'Orador y organizador en PyCon Argentina, FLISoL y Software Freedom Day',
+      'Orador en eventos de la comunidad de Python Argentina',
+    ],
+    itemsEn: [
+      'Speaker and organizer at PyCon Argentina, FLISoL and Software Freedom Day',
+      'Speaker at Python Argentina community events',
     ],
   },
   {
