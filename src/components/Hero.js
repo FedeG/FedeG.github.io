@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import { useTypewriter } from '../hooks/useTypewriter';
-import { FiArrowDown, FiGithub, FiStar, FiUsers } from 'react-icons/fi';
+import { FiArrowDown, FiGithub, FiUsers, FiClock } from 'react-icons/fi';
 
 export default function Hero() {
   const { t, lang } = useI18n();
@@ -37,6 +37,10 @@ export default function Hero() {
 
           <p className="hero-tagline">
             <TypewriterText text={tagline} />
+          </p>
+
+          <p className="hero-stack" aria-label={lang === 'es' ? 'Stack principal' : 'Core stack'}>
+            {personalInfo.stack.join(' · ')}
           </p>
 
           <nav className="hero-actions" aria-label={lang === 'es' ? 'Acciones principales' : 'Main actions'}>
@@ -78,9 +82,9 @@ export default function Hero() {
             </div>
             <div className="hero-stat">
               <span className="hero-stat-value hero-stat-icon">
-                <FiStar size={18} aria-hidden="true" /> {(personalInfo.githubStats.stars / 1000).toFixed(1)}k
+                <FiClock size={18} aria-hidden="true" /> {personalInfo.yearsExperience}+
               </span>
-              <span className="hero-stat-label">{t('hero.stars')}</span>
+              <span className="hero-stat-label">{t('hero.years')}</span>
             </div>
           </div>
 

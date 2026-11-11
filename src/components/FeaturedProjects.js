@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { projects } from '../data/portfolio';
@@ -12,12 +11,7 @@ export default function FeaturedProjects() {
   return (
     <section className="section">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <div className="featured-header">
             <div>
               <h2 className="section-title">{t('featured.title')}</h2>
@@ -28,21 +22,17 @@ export default function FeaturedProjects() {
             </Link>
           </div>
           <div className="glow-line" />
-        </motion.div>
+        </div>
 
         <div className="featured-grid">
           {featured.map((project, i) => {
             const title = lang === 'en' && project.titleEn ? project.titleEn : project.title;
             const desc = lang === 'en' && project.descriptionEn ? project.descriptionEn : project.description;
             return (
-              <motion.div
+              <div
                 key={project.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="project-card"
+                className="project-card fade-in-up"
+                style={{ animationDelay: `${i * 60}ms` }}
               >
                 <h3 className="project-card-title">{title}</h3>
                 <p className="project-card-desc">{desc}</p>
@@ -63,7 +53,7 @@ export default function FeaturedProjects() {
                     </a>
                   )}
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

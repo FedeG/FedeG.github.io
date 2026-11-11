@@ -4,15 +4,15 @@ const I18nContext = createContext();
 
 const translations = {
     es: {
-    nav: { home: 'Inicio', experience: 'Experiencia', skills: 'Habilidades', projects: 'Proyectos' },
+    nav: { home: 'Inicio', experience: 'Experiencia', skills: 'Habilidades', projects: 'Proyectos', contact: 'Contacto' },
     hero: {
-      badge: 'Disponible para oportunidades',
+      badge: 'Disponible para roles remotos',
       greeting: 'Hola, soy',
       viewExperience: 'Ver Experiencia',
       exploreProjects: 'Explorar Proyectos',
       repos: 'Repos',
       followers: 'Followers',
-      stars: 'Stars',
+      years: 'Años de experiencia',
       orgOn: ' en GitHub',
     },
     about: { title: 'Sobre Mí', location: 'Ubicación', email: 'Email', role: 'Rol', education: 'Formación', hobbies: 'Intereses' },
@@ -39,15 +39,15 @@ const translations = {
     footer: { builtWith: 'Hecho con' },
   },
     en: {
-    nav: { home: 'Home', experience: 'Experience', skills: 'Skills', projects: 'Projects' },
+    nav: { home: 'Home', experience: 'Experience', skills: 'Skills', projects: 'Projects', contact: 'Contact' },
     hero: {
-      badge: 'Available for opportunities',
+      badge: 'Available for remote roles',
       greeting: "Hi, I'm",
       viewExperience: 'View Experience',
       exploreProjects: 'Explore Projects',
       repos: 'Repos',
       followers: 'Followers',
-      stars: 'Stars',
+      years: 'Years of experience',
       orgOn: ' on GitHub',
     },
     about: { title: 'About Me', location: 'Location', email: 'Email', role: 'Role', education: 'Education', hobbies: 'Interests' },

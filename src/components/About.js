@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
 import { useI18n } from '../context/I18nContext';
 import { FiMapPin, FiMail, FiAward, FiExternalLink, FiBook } from 'react-icons/fi';
@@ -18,23 +17,14 @@ export default function About() {
   return (
     <section className="section" aria-label={t('about.title')}>
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <h2 className="section-title">{t('about.title')}</h2>
           <div className="glow-line" />
-        </motion.div>
+        </div>
 
         <div className="about-grid">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="about-text"
+          <div
+            className="about-text fade-in-up"
           >
             <p>{lang === 'en' ? personalInfo.bioEn : personalInfo.bio}</p>
             <div className="about-langs">
@@ -67,14 +57,11 @@ export default function About() {
                 })}
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="about-card"
+          <div
+            className="about-card fade-in-up"
+            style={{ animationDelay: '80ms' }}
           >
             <div className="about-card-item">
               <FiMapPin className="about-card-icon" size={18} aria-hidden="true" />
@@ -104,7 +91,7 @@ export default function About() {
                 <p className="about-card-value">{lang === 'en' ? 'Information Systems Engineer - UTN' : 'Ing. en Sistemas de Información - UTN'}</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -161,6 +161,31 @@ ul {
   backface-visibility: hidden;
 }
 
+/* One-shot entrance animation.
+   Runs once when the styles apply and never re-triggers on scroll or hydration,
+   which avoids the flicker caused by scroll-triggered animations on prerendered HTML.
+   `backwards` fill keeps the element hidden during its stagger delay only. */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.45s ease-out backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    animation: none;
+  }
+}
+
 ::selection {
   background: var(--purple-alpha-20);
   color: var(--purple);
@@ -691,6 +716,16 @@ ul {
   font-size: 1.125rem;
   max-width: 600px;
   margin: 0 auto 2rem;
+}
+
+.hero-stack {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  max-width: 600px;
+  margin: -1.25rem auto 2rem;
+  overflow-wrap: break-word;
 }
 
 .hero-actions {
