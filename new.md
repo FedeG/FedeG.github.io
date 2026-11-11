@@ -97,11 +97,19 @@ Criterio usado (de la guía): CV/portafolio como **documento de ventas ejecutivo
 - Devecoop: tamaño de equipos que mentoreaste, cantidad de clientes internacionales.
 - Cualquier optimización con número (latencia, costo, tiempo ahorrado).
 
-**Datos a verificar**:
-- `githubStats.stars = 8500` (el hero muestra "8.5k stars") — verificá contra tu GitHub real.
-- **Encryptr**: figura como "Creador" con 1,600+ estrellas. Encryptr es conocido como el password manager open source de SpiderOak; si tu repo es un fork o tu rol fue otro, ajustar el rol (mantenedor/contribuidor) para que un recruiter técnico no lo lea como sobreventa. Solo vos sabés la historia de ese repo.
-- **Email distinto**: portfolio muestra `federico.gonzalez@devecoop.com`, el CV `federicogonzalez761@gmail.com`. Elegí cuál es el canal de contacto y unificá (queda sin cambiar en esta pasada).
+**Datos verificados y corregidos (ronda 2):**
+- `githubStats`: repos 59, followers 42 (API de GitHub, usuario `FedeG`). El total real de estrellas de tus repos es **35**, así que se quitó el stat inflado "8.5k" y se reemplazó por "10+ años de experiencia".
+- **Encryptr**: corregido. `Fedeg/Encryptr` no existe (el link estaba roto); el proyecto real es `SpiderOak/Encryptr` (1,558 estrellas). Rol cambiado de "Creador" a "Contribuidor", con la aclaración de que contribuiste mientras trabajabas en SpiderOak.
+- **Email**: unificado a `federicogonzalez761@gmail.com` (portfolio, JSON-LD y CV).
 - `linkedin.md` quedó sin trackear a propósito: es una guía de un tercero con promoción incluida; no la commiteo a tu repo público salvo que quieras.
+
+**Ronda 2 — reposicionamiento aplicado** (perfil Full Stack + DevOps + open source):
+- Titular: "Senior Software Engineer · Full-Stack & DevOps" (portfolio y CV).
+- About/Perfil: diferencial explícito (desarrollo + infraestructura, Linux/Docker, open source) sin perder la escala de Batuta/Kilimo.
+- Devecoop: la descripción ahora habla de tu rol y responsabilidades, no de la cooperativa.
+- Proyectos: Cuando Jugamos y EventoL describen qué hiciste vos (arquitectura, APIs, gamificación, despliegue).
+- Destacados: 4 proyectos que cuentan la historia (propio, open source, Docker/DevOps, stack reciente).
+- Skills: nueva categoría inicial "Ingeniería de Software" (arquitectura, APIs REST, microservicios, DevOps, Linux).
 
 ---
 
