@@ -17,7 +17,8 @@ export const personalInfo = {
   ],
   bio: `Ingeniero en Sistemas de Información (UTN) con más de 10 años construyendo y escalando software full-stack e infraestructura cloud. Especializado en Python/Django, Node.js/React y arquitecturas distribuidas sobre AWS, Docker, Kafka y Terraform. Trayectoria en plataformas de alto impacto: telemetría de endpoints a gran escala para una plataforma de ciberseguridad reconocida por el World Economic Forum (Batuta) y procesamiento satelital en tiempo real para AgTech (Kilimo). Socio y referente técnico de Devecoop, co-fundador de Eventol, revisor técnico editorial de Packt y orador en PyCon Argentina y FLISoL.`,
   bioEn: `Information Systems Engineer (UTN) with 10+ years building and scaling full-stack software and cloud infrastructure. Specialized in Python/Django, Node.js/React, and distributed architectures on AWS, Docker, Kafka, and Terraform. Track record on high-impact platforms: large-scale endpoint telemetry for a World Economic Forum–recognized cybersecurity product (Batuta) and real-time satellite data processing for precision AgTech (Kilimo). Partner and technical lead at Devecoop, co-founder of Eventol, Packt technical book reviewer, and speaker at PyCon Argentina and FLISoL.`,
-  email: 'federico.gonzalez@devecoop.com',
+  email: 'federicogonzalez761@gmail.com',
+  yearsExperience: 10,
   location: 'Buenos Aires, Argentina',
   languages: ['Español (Nativo)', 'Inglés (Avanzado)'],
   hobbies: [
@@ -27,9 +28,8 @@ export const personalInfo = {
     { icon: 'coop', label: 'Cooperativista', labelEn: 'Co-op Member', detail: 'Socio de Devecoop', detailEn: 'Member of Devecoop', url: 'https://devecoop.com' },
   ],
   githubStats: {
-    repos: 58,
-    followers: 41,
-    stars: 8500,
+    repos: 59,
+    followers: 42,
     organizations: [
       { name: 'Devecoop', url: 'https://github.com/Devecoop' },
       { name: 'PyAr', url: 'https://github.com/PyAr' },
@@ -223,18 +223,18 @@ export const experience = [
 export const projects = [
   {
     id: 'encryptr',
-    title: 'Encryptr',
-    titleEn: 'Encryptr',
-    role: 'Creador & Desarrollador Principal',
-    roleEn: 'Creator & Lead Developer',
-    description: 'Administrador de contraseñas de código abierto con más de 1,600 estrellas en GitHub. Gestión segura de credenciales con cifrado robusto.',
-    descriptionEn: 'Open-source password manager with over 1,600 stars on GitHub. Secure credential management with robust encryption.',
+    title: 'Encryptr (SpiderOak)',
+    titleEn: 'Encryptr (SpiderOak)',
+    role: 'Contribuidor',
+    roleEn: 'Contributor',
+    description: 'Password manager zero-knowledge de SpiderOak (1.5k+ estrellas en GitHub). Contribuí a su desarrollo mientras trabajaba en SpiderOak, junto a otros proyectos de la compañía.',
+    descriptionEn: 'SpiderOak zero-knowledge password manager (1.5k+ GitHub stars). Contributed to its development while working at SpiderOak, alongside other company projects.',
     category: ['open-source', 'full-stack'],
-    tech: ['JavaScript', 'Cifrado', 'Node.js'],
+    tech: ['JavaScript', 'Crypton', 'Cifrado'],
     links: [
-      { label: 'GitHub', url: 'https://github.com/Fedeg/Encryptr' },
+      { label: 'GitHub', url: 'https://github.com/SpiderOak/Encryptr' },
     ],
-    featured: true,
+    featured: false,
   },
   {
     id: 'alhornoconpapa',
