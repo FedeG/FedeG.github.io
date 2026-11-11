@@ -25,14 +25,14 @@ Criterio usado (de la guía): CV/portafolio como **documento de ventas ejecutivo
 
 ## Etapas de ejecución
 
-- [ ] **Etapa 1 — Plan**: este documento (`new.md`) + tracking. Commit: `docs: add portfolio & CV improvement plan (new.md)`
-- [ ] **Etapa 2 — CV**: reescritura de `cv.md` (resumen ejecutivo, bullets de impacto, orden cronológico estricto, títulos estándar, typo "Sorftware", links verificables) + nuevo `cv-en.md` en inglés. Commit: `docs(cv): impact-oriented rewrite and English version`
-- [ ] **Etapa 3 — Hero/About/SEO**: rol ES con Senior, línea de stack en el hero, badge "roles remotos", bio ejecutiva ES/EN, ubicación "Buenos Aires, Argentina", JSON-LD y meta keywords. Commit: `feat(hero): senior positioning, stack keywords, executive bio`
-- [ ] **Etapa 4 — Experience**: highlights orientados a impacto ES/EN, títulos estándar, sacar las 3 entradas de bajo valor. Commit: `feat(experience): impact highlights, standard titles, prune low-signal entries`
-- [ ] **Etapa 5 — Skills + tests**: categorías bilingües (fix bug), categoría "IA y Automatización", TypeScript/SQL/Redis, fix de iconos, tests de integridad de datos. Commit: `fix(skills): bilingual categories, AI section, icon coverage and data tests`
-- [ ] **Etapa 6 — Projects/Comunidad**: agregar "Cuando Jugamos", alinear al.horno.con.papa con el CV, workshops fuera de destacados, card de charlas. Commit: `feat(projects): add Cuando Jugamos, talks card, dedupe workshops`
-- [ ] **Etapa 7 — Nav/Contacto**: anchor de contacto + link en navbar. Commit: `feat(nav): contact anchor and nav link`
-- [ ] **Etapa 8 — Verificación final**: build + tests + actualización de este documento. Commit: `docs: final verification status`
+- [x] **Etapa 1 — Plan**: este documento (`new.md`) + tracking. Commit: `docs: add portfolio & CV improvement plan (new.md)`
+- [x] **Etapa 2 — CV**: reescritura de `cv.md` (resumen ejecutivo, bullets de impacto, orden cronológico estricto, títulos estándar, typo "Sorftware", links verificables) + nuevo `cv-en.md` en inglés. Commit: `docs(cv): impact-oriented rewrite and English version`
+- [x] **Etapa 3 — Hero/About/SEO**: rol ES con Senior, línea de stack en el hero, badge "roles remotos", bio ejecutiva ES/EN, ubicación "Buenos Aires, Argentina", JSON-LD y meta keywords. Commit: `feat(hero): senior positioning, stack keywords, executive bio`
+- [x] **Etapa 4 — Experience**: highlights orientados a impacto ES/EN, títulos estándar, sacar las 3 entradas de bajo valor. Commit: `feat(experience): impact highlights, standard titles, prune low-signal entries`
+- [x] **Etapa 5 — Skills + tests**: categorías bilingües (fix bug), categoría "IA y Automatización", TypeScript/SQL/Redis, fix de iconos, tests de integridad de datos. Commit: `fix(skills): bilingual categories, AI section, icon coverage and data tests`
+- [x] **Etapa 6 — Projects/Comunidad**: agregar "Cuando Jugamos", alinear al.horno.con.papa con el CV, workshops fuera de destacados, card de charlas. Commit: `feat(projects): add Cuando Jugamos, talks card, dedupe workshops`
+- [x] **Etapa 7 — Nav/Contacto**: anchor de contacto + link en navbar. Commit: `feat(nav): contact anchor and nav link`
+- [x] **Etapa 8 — Verificación final**: build + tests + actualización de este documento. Commit: `docs: final verification status`
 
 ---
 
@@ -121,14 +121,14 @@ Con tus datos reales, templates listos para usar:
 
 ## Checklist final
 
-- [ ] `cv.md` con resumen ejecutivo, bullets de impacto y orden cronológico
-- [ ] `cv-en.md` en inglés espejando el CV mejorado
-- [ ] Hero con rol Senior (ES/EN), stack visible y badge específico
-- [ ] About con bio ejecutiva y ubicación con ciudad
-- [ ] Experience con highlights de impacto, sin entradas de bajo valor
-- [ ] Skills bilingüe, con IA y Automatización, TypeScript/SQL/Redis, iconos correctos
-- [ ] Projects: Cuando Jugamos agregado, al.horno.con.papa alineado, workshops sin duplicar
-- [ ] Comunidad con charlas y conferencias
-- [ ] Contacto navegable desde el navbar
-- [ ] SEO/JSON-LD completos
-- [ ] `CI=true npm test` y `npm run build` pasando
+- [x] `cv.md` con resumen ejecutivo, bullets de impacto y orden cronológico
+- [x] `cv-en.md` en inglés espejando el CV mejorado
+- [x] Hero con rol Senior (ES/EN), stack visible y badge específico
+- [x] About con bio ejecutiva y ubicación con ciudad
+- [x] Experience con highlights de impacto, sin entradas de bajo valor
+- [x] Skills bilingüe, con IA y Automatización, TypeScript/SQL/Redis, iconos correctos
+- [x] Projects: Cuando Jugamos agregado, al.horno.con.papa alineado, workshops sin duplicar
+- [x] Comunidad con charlas y conferencias
+- [x] Contacto navegable desde el navbar
+- [x] SEO/JSON-LD completos
+- [x] `CI=true npm test` y `npm run build` pasando
