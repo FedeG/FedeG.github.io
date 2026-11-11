@@ -17,8 +17,8 @@ S7. No invented metrics or personal facts: numbers absent from cv.md/linkedin.md
 
 | ID | Spec | Task | Route | Status | Commit |
 |----|------|------|-------|--------|--------|
-| T1 | S1-S4 | Write new.md: full audit (cv.md + portfolio) with all findings, stages, and pending-user-data list | inline | pending | — |
-| T2 | S3, S7 | Rework cv.md: executive summary, impact-oriented bullets, strict reverse-chronological order, standard titles, typo fixes, verifiable project links; add cv-en.md (English version) | inline | pending | — |
+| T1 | S1-S4 | Write new.md: full audit (cv.md + portfolio) with all findings, stages, and pending-user-data list | inline | done | 7cfa025 |
+| T2 | S3, S7 | Rework cv.md: executive summary, impact-oriented bullets, strict reverse-chronological order, standard titles, typo fixes, verifiable project links; add cv-en.md (English version) | inline | done | this commit |
 | T3 | S1, S2 | Hero/About/SEO: senior ES role, stack keywords line, executive bio ES/EN, Buenos Aires location, badge wording, JSON-LD and meta keywords | inline | pending | — |
 | T4 | S1, S2 | Experience data: impact highlights ES/EN, standard titles, prune low-signal 2017 entries and duplicate Gantiem umbrella entry | inline | pending | — |
 | T5 | S1, S2 | Skills: bilingual categories (fix i18n bug), AI & Data category, TypeScript/SQL/Redis, iconMap key fixes; add data-integrity tests (RED observed before fix, GREEN in commit) | inline | pending | — |
